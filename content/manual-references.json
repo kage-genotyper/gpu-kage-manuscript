@@ -18,5 +18,33 @@
       "family": "Himmelstein"
     }
   ]
-}
+},
+  {
+    "id": "cupy",
+    "type": "article-journal",
+    "title": "Cupy: A numpy-compatible library for nvidia gpu calculations",
+    "publisher": "Thirty-first Annual Conference on Neural Information Processing Systems (NeurIPS)",
+    "author": [
+      {
+        "given": "Ryosuke",
+        "family": "Okuta"
+      },
+     {
+        "given": "Yuya",
+        "family": "Unno"
+      },
+      {
+        "given": "Daisuke",
+        "family": "Nishino"
+      },
+      {
+        "given": "Shohei",
+        "family": "Hido"
+      },
+      {
+        "given": "Crissman",
+        "family": "Loomis"
+      }
+    ]
+  }
 ]

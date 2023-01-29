@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: "Ultra-fast genotyping of SNPs and short indels using GPU-acceleration"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - markdown
@@ -7,22 +7,24 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - name: Jørgen Wictor Henriksen
+    initials: JWH
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
+  - name: Ivar Grytten
+    initials: IG
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
+  - name: Knut Dagestad Rand
+    initials: KD
+    affiliations:
+      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
+      - Centre for Bioinformatics, University of Oslo, Oslo, Norway
+  - name: Geir Kjetil Sandve
+    initials: GKS
+    affiliations:
+      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
+      - Centre for Bioinformatics, University of Oslo, Oslo, Norway
+      - UiORealArt Convergence Environment, University of Oslo, Oslo, Norway
+    email: geirksa@ifi.uio.no
     corresponding: true
