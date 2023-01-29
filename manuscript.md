@@ -25,8 +25,8 @@ header-includes: |
   <meta name="dc.date" content="2023-01-29" />
   <meta name="citation_publication_date" content="2023-01-29" />
   <meta property="article:published_time" content="2023-01-29" />
-  <meta name="dc.modified" content="2023-01-29T19:07:09+00:00" />
-  <meta property="article:modified_time" content="2023-01-29T19:07:09+00:00" />
+  <meta name="dc.modified" content="2023-01-29T21:47:21+00:00" />
+  <meta property="article:modified_time" content="2023-01-29T21:47:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_pdf_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/04138e929edaba8e1f319d900cb94a8c602467a7/" />
-  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/04138e929edaba8e1f319d900cb94a8c602467a7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/04138e929edaba8e1f319d900cb94a8c602467a7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/" />
+  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,14 +71,6 @@ manubot-clear-requests-cache: false
 
 
 
-
-<small><em>
-This manuscript
-([permalink](https://kage-genotyper.github.io/gpu-kage-manuscript/v/04138e929edaba8e1f319d900cb94a8c602467a7/))
-was automatically generated
-from [kage-genotyper/gpu-kage-manuscript@04138e9](https://github.com/kage-genotyper/gpu-kage-manuscript/tree/04138e929edaba8e1f319d900cb94a8c602467a7)
-on January 29, 2023.
-</em></small>
 
 
 
@@ -122,9 +114,8 @@ Geir Kjetil Sandve \<geirksa@ifi.uio.no\>.
 
 
 
-
 ## Abstract
-As sequencing costs have drastically been reduced in recent years, efficient methods for variant discovery and genotyping  has become increasingly important. Recent methods have shown that genotyping can be done efficiently and accurately using *alignment-free* methods that are based on analysing kmers from sequenced reads. In recent work, we have presented the KAGE genotyper, which uses an efficient pangenome representation of known individuals in a population to further increase accuracy and efficiency.
+As sequencing costs have steadily decreased in recent years, having efficient methods for variant discovery and genotyping has become increasingly important. Recent methods have shown that genotyping can be done efficiently and accurately using *alignment-free* methods that are based on analysing kmers from sequenced reads. In recent work, we have presented the KAGE genotyper, which uses an efficient pangenome representation of known individuals in a population to further increase accuracy and efficiency.
 
 We here present *GKAGE*, a new and improved version of KAGE that utilises the *Graphical Processing Unit* (GPU) to further increase the efficiency by counting and analysing large amounts of kmers in parallel. We show that GKAGE is able to genotype an individual up to a magnitude faster than KAGE while producing the same output, which makes it by far the fastest genotyper available today. GKAGE can run on consumer-grade GPUs, and enables genotyping of a human sample in only a matter of minutes without the need for expensive high-performance computers. GKAGE is open source and available at <https://github.com/ivargr/kage>.
 
@@ -143,9 +134,20 @@ GKAGE is a GPU-accelerated version of the recently published KAGE genotyper. GKA
 We have recently shown that KAGE is an order of magnitude faster than existing genotypers while giving better or comparable accuracy [@kage]. We thus only benchmark GKAGE against KAGE to show the effect of GPU-acceleration. We do this by running GKAGE and KAGE on a human whole genome sample (15x coverage) on two different systems:
 
 1. A high-end server with an AMD EPYC 7742 64-Core CPU and two NVIDIA Tesla V100 GPUs. KAGE was run using 16 cores and GKAGE was run using one GPU.
+
 2. A regular desktop computer with an 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz CPU and a NVIDIA GTX 1660 super GPU. KAGE was run using 6 cores.
 
 Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and 8x faster on the desktop computer.
+
+
+|                           | KAGE     | GKAGE   |
+|---------------------------|----------|---------|
+| Desktop computer          | 1880 sec | 180 sec |
+| High-performance computer | 510 sec  | 108 sec |
+Table: Running times of KAGE and GKAGE
+{#tbl:table1}
+
+
 
 
 
@@ -187,10 +189,7 @@ Since the original KAGE genotyper was implemented mainly using the array program
 
 
 
-
-
-
-## References {.page_break_before}
+## References
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
