@@ -1,476 +1,3938 @@
 [
   {
-    "publisher": "The Royal Society",
-    "issue": "141",
-    "abstract": "<jats:p>Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains. Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well suited to solve problems of these fields. We examine applications of deep learning to a variety of biomedical problems—patient classification, fundamental biological processes and treatment of patients—and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges. Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art. Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation. Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge. Furthermore, the limited amount of labelled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records. Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.</jats:p>",
-    "DOI": "10.1098/rsif.2017.0387",
+    "id": "Jm5YaFMi",
     "type": "article-journal",
-    "page": "20170387",
-    "source": "Crossref",
-    "title": "Opportunities and obstacles for deep learning in biology and medicine",
-    "volume": "15",
+    "title": "Cupy: A numpy-compatible library for nvidia gpu calculations",
+    "publisher": "Thirty-first Annual Conference on Neural Information Processing Systems (NeurIPS)",
     "author": [
       {
-        "given": "Travers",
-        "family": "Ching"
+        "given": "Ryosuke",
+        "family": "Okuta"
       },
       {
-        "given": "Daniel S.",
-        "family": "Himmelstein"
+        "given": "Yuya",
+        "family": "Unno"
       },
       {
-        "given": "Brett K.",
-        "family": "Beaulieu-Jones"
+        "given": "Daisuke",
+        "family": "Nishino"
       },
       {
-        "given": "Alexandr A.",
-        "family": "Kalinin"
+        "given": "Shohei",
+        "family": "Hido"
       },
       {
-        "given": "Brian T.",
-        "family": "Do"
-      },
-      {
-        "given": "Gregory P.",
-        "family": "Way"
-      },
-      {
-        "given": "Enrico",
-        "family": "Ferrero"
-      },
-      {
-        "given": "Paul-Michael",
-        "family": "Agapow"
-      },
-      {
-        "given": "Michael",
-        "family": "Zietz"
-      },
-      {
-        "given": "Michael M.",
-        "family": "Hoffman"
-      },
-      {
-        "given": "Wei",
-        "family": "Xie"
-      },
-      {
-        "given": "Gail L.",
-        "family": "Rosen"
-      },
-      {
-        "given": "Benjamin J.",
-        "family": "Lengerich"
-      },
-      {
-        "given": "Johnny",
-        "family": "Israeli"
-      },
-      {
-        "given": "Jack",
-        "family": "Lanchantin"
-      },
-      {
-        "given": "Stephen",
-        "family": "Woloszynek"
-      },
-      {
-        "given": "Anne E.",
-        "family": "Carpenter"
-      },
-      {
-        "given": "Avanti",
-        "family": "Shrikumar"
-      },
-      {
-        "given": "Jinbo",
-        "family": "Xu"
-      },
-      {
-        "given": "Evan M.",
-        "family": "Cofer"
-      },
-      {
-        "given": "Christopher A.",
-        "family": "Lavender"
-      },
-      {
-        "given": "Srinivas C.",
-        "family": "Turaga"
-      },
-      {
-        "given": "Amr M.",
-        "family": "Alexandari"
-      },
-      {
-        "given": "Zhiyong",
-        "family": "Lu"
-      },
-      {
-        "given": "David J.",
-        "family": "Harris"
-      },
-      {
-        "given": "Dave",
-        "family": "DeCaprio"
-      },
-      {
-        "given": "Yanjun",
-        "family": "Qi"
-      },
-      {
-        "given": "Anshul",
-        "family": "Kundaje"
-      },
-      {
-        "given": "Yifan",
-        "family": "Peng"
-      },
-      {
-        "given": "Laura K.",
-        "family": "Wiley"
-      },
-      {
-        "given": "Marwin H. S.",
-        "family": "Segler"
-      },
-      {
-        "given": "Simina M.",
-        "family": "Boca"
-      },
-      {
-        "given": "S. Joshua",
-        "family": "Swamidass"
-      },
-      {
-        "given": "Austin",
-        "family": "Huang"
-      },
-      {
-        "given": "Anthony",
-        "family": "Gitter"
-      },
-      {
-        "given": "Casey S.",
-        "family": "Greene"
+        "given": "Crissman",
+        "family": "Loomis"
       }
     ],
-    "container-title": "Journal of The Royal Society Interface",
-    "language": "en",
-    "issued": {
-      "date-parts": [
-        [
-          2018,
-          4
-        ]
-      ]
-    },
-    "URL": "https://doi.org/gddkhn",
-    "container-title-short": "J. R. Soc. Interface.",
-    "PMCID": "PMC5938574",
-    "PMID": "29618526",
-    "id": "PZMP42Ak",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1098/rsif.2017.0387"
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.json\nstandard_id: cupy"
   },
   {
-    "publisher": "Public Library of Science (PLoS)",
-    "issue": "6",
-    "DOI": "10.1371/journal.pcbi.1007128",
+    "publisher": "Elsevier BV",
+    "DOI": "10.1016/j.isci.2019.07.011",
     "type": "article-journal",
-    "page": "e1007128",
+    "page": "20-27",
     "source": "Crossref",
-    "title": "Open collaborative writing with Manubot",
-    "volume": "15",
+    "title": "MALVA: Genotyping by Mapping-free ALlele Detection of Known VAriants",
+    "volume": "18",
     "author": [
       {
-        "given": "Daniel S.",
-        "family": "Himmelstein"
+        "given": "Luca",
+        "family": "Denti"
       },
       {
-        "given": "Vincent",
-        "family": "Rubinetti"
+        "given": "Marco",
+        "family": "Previtali"
       },
       {
-        "given": "David R.",
-        "family": "Slochower"
+        "given": "Giulia",
+        "family": "Bernardini"
       },
       {
-        "given": "Dongbo",
-        "family": "Hu"
+        "given": "Alexander",
+        "family": "Schönhuth"
       },
       {
-        "given": "Venkat S.",
-        "family": "Malladi"
-      },
-      {
-        "given": "Casey S.",
-        "family": "Greene"
-      },
-      {
-        "given": "Anthony",
-        "family": "Gitter"
+        "given": "Paola",
+        "family": "Bonizzoni"
       }
     ],
-    "container-title": "PLOS Computational Biology",
+    "container-title": "iScience",
     "language": "en",
-    "editor": [
-      {
-        "given": "Dina",
-        "family": "Schneidman-Duhovny"
-      }
-    ],
     "issued": {
       "date-parts": [
         [
           2019,
-          6,
-          24
+          8
         ]
       ]
     },
-    "URL": "https://doi.org/c7np",
-    "container-title-short": "PLoS Comput Biol",
-    "PMCID": "PMC6611653",
-    "PMID": "31233491",
-    "id": "YuJbg3zO",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1007128"
+    "URL": "https://doi.org/gmhw28",
+    "container-title-short": "iScience",
+    "PMCID": "PMC6664100",
+    "PMID": "31352182",
+    "id": "MpmJz9S5",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/j.isci.2019.07.011"
   },
   {
-    "publisher": "eLife Sciences Publications, Ltd",
-    "abstract": "<jats:p>The website Sci-Hub enables users to download PDF versions of scholarly articles, including many articles that are paywalled at their journal’s site. Sci-Hub has grown rapidly since its creation in 2011, but the extent of its coverage has been unclear. Here we report that, as of March 2017, Sci-Hub’s database contains 68.9% of the 81.6 million scholarly articles registered with Crossref and 85.1% of articles published in toll access journals. We find that coverage varies by discipline and publisher, and that Sci-Hub preferentially covers popular, paywalled content. For toll access articles, we find that Sci-Hub provides greater coverage than the University of Pennsylvania, a major research university in the United States. Green open access to toll access articles via licit services, on the other hand, remains quite limited. Our interactive browser at https://greenelab.github.io/scihub allows users to explore these findings in more detail. For the first time, nearly all scholarly literature is available gratis to anyone with an Internet connection, suggesting the toll access business model may become unsustainable.</jats:p>",
-    "DOI": "10.7554/elife.32822",
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7571",
+    "DOI": "10.1038/nature15393",
     "type": "article-journal",
+    "page": "68-74",
     "source": "Crossref",
-    "title": "Sci-Hub provides access to nearly all scholarly literature",
-    "volume": "7",
+    "title": "A global reference for human genetic variation",
+    "volume": "526",
     "author": [
+      {},
       {
-        "given": "Daniel S",
-        "family": "Himmelstein"
+        "given": "Adam",
+        "family": "Auton"
       },
       {
-        "given": "Ariel Rodriguez",
-        "family": "Romero"
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
       },
       {
-        "given": "Jacob G",
-        "family": "Levernier"
+        "suffix": "(Co-Chair)",
+        "given": "David M.",
+        "family": "Altshuler"
       },
       {
-        "given": "Thomas Anthony",
-        "family": "Munro"
+        "suffix": "(Co-Chair)",
+        "given": "Richard M.",
+        "family": "Durbin"
       },
       {
-        "given": "Stephen Reid",
-        "family": "McLaughlin"
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
       },
       {
-        "given": "Bastian",
-        "family": "Greshake Tzovaras"
+        "given": "David R.",
+        "family": "Bentley"
       },
       {
-        "given": "Casey S",
-        "family": "Greene"
-      }
+        "given": "Aravinda",
+        "family": "Chakravarti"
+      },
+      {
+        "given": "Andrew G.",
+        "family": "Clark"
+      },
+      {
+        "given": "Peter",
+        "family": "Donnelly"
+      },
+      {
+        "given": "Evan E.",
+        "family": "Eichler"
+      },
+      {
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Stacey B.",
+        "family": "Gabriel"
+      },
+      {
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "given": "Eric D.",
+        "family": "Green"
+      },
+      {
+        "given": "Matthew E.",
+        "family": "Hurles"
+      },
+      {
+        "given": "Bartha M.",
+        "family": "Knoppers"
+      },
+      {
+        "given": "Jan O.",
+        "family": "Korbel"
+      },
+      {
+        "given": "Eric S.",
+        "family": "Lander"
+      },
+      {
+        "given": "Charles",
+        "family": "Lee"
+      },
+      {
+        "given": "Hans",
+        "family": "Lehrach"
+      },
+      {
+        "given": "Elaine R.",
+        "family": "Mardis"
+      },
+      {
+        "given": "Gabor T.",
+        "family": "Marth"
+      },
+      {
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "given": "Deborah A.",
+        "family": "Nickerson"
+      },
+      {
+        "given": "Jeanette P.",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Stephen T.",
+        "family": "Sherry"
+      },
+      {
+        "given": "Jun",
+        "family": "Wang"
+      },
+      {
+        "given": "Richard K.",
+        "family": "Wilson"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "given": "Eric",
+        "family": "Boerwinkle"
+      },
+      {
+        "given": "Harsha",
+        "family": "Doddapaneni"
+      },
+      {
+        "given": "Yi",
+        "family": "Han"
+      },
+      {
+        "given": "Viktoriya",
+        "family": "Korchina"
+      },
+      {
+        "given": "Christie",
+        "family": "Kovar"
+      },
+      {
+        "given": "Sandra",
+        "family": "Lee"
+      },
+      {
+        "given": "Donna",
+        "family": "Muzny"
+      },
+      {
+        "given": "Jeffrey G.",
+        "family": "Reid"
+      },
+      {
+        "given": "Yiming",
+        "family": "Zhu"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jun",
+        "family": "Wang"
+      },
+      {
+        "given": "Yuqi",
+        "family": "Chang"
+      },
+      {
+        "given": "Qiang",
+        "family": "Feng"
+      },
+      {
+        "given": "Xiaodong",
+        "family": "Fang"
+      },
+      {
+        "given": "Xiaosen",
+        "family": "Guo"
+      },
+      {
+        "given": "Min",
+        "family": "Jian"
+      },
+      {
+        "given": "Hui",
+        "family": "Jiang"
+      },
+      {
+        "given": "Xin",
+        "family": "Jin"
+      },
+      {
+        "given": "Tianming",
+        "family": "Lan"
+      },
+      {
+        "given": "Guoqing",
+        "family": "Li"
+      },
+      {
+        "given": "Jingxiang",
+        "family": "Li"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Shengmao",
+        "family": "Liu"
+      },
+      {
+        "given": "Xiao",
+        "family": "Liu"
+      },
+      {
+        "given": "Yao",
+        "family": "Lu"
+      },
+      {
+        "given": "Xuedi",
+        "family": "Ma"
+      },
+      {
+        "given": "Meifang",
+        "family": "Tang"
+      },
+      {
+        "given": "Bo",
+        "family": "Wang"
+      },
+      {
+        "given": "Guangbiao",
+        "family": "Wang"
+      },
+      {
+        "given": "Honglong",
+        "family": "Wu"
+      },
+      {
+        "given": "Renhua",
+        "family": "Wu"
+      },
+      {
+        "given": "Xun",
+        "family": "Xu"
+      },
+      {
+        "given": "Ye",
+        "family": "Yin"
+      },
+      {
+        "given": "Dandan",
+        "family": "Zhang"
+      },
+      {
+        "given": "Wenwei",
+        "family": "Zhang"
+      },
+      {
+        "given": "Jiao",
+        "family": "Zhao"
+      },
+      {
+        "given": "Meiru",
+        "family": "Zhao"
+      },
+      {
+        "given": "Xiaole",
+        "family": "Zheng"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Eric S.",
+        "family": "Lander"
+      },
+      {
+        "given": "David M.",
+        "family": "Altshuler"
+      },
+      {
+        "suffix": "(Co-Chair)",
+        "given": "Stacey B.",
+        "family": "Gabriel"
+      },
+      {
+        "given": "Namrata",
+        "family": "Gupta"
+      },
+      {
+        "given": "Neda",
+        "family": "Gharani"
+      },
+      {
+        "given": "Lorraine H.",
+        "family": "Toji"
+      },
+      {
+        "given": "Norman P.",
+        "family": "Gerry"
+      },
+      {
+        "given": "Alissa M.",
+        "family": "Resch"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Jonathan",
+        "family": "Barker"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Laurent",
+        "family": "Gil"
+      },
+      {
+        "given": "Sarah E.",
+        "family": "Hunt"
+      },
+      {
+        "given": "Gavin",
+        "family": "Kelman"
+      },
+      {
+        "given": "Eugene",
+        "family": "Kulesha"
+      },
+      {
+        "given": "Rasko",
+        "family": "Leinonen"
+      },
+      {
+        "given": "William M.",
+        "family": "McLaren"
+      },
+      {
+        "given": "Rajesh",
+        "family": "Radhakrishnan"
+      },
+      {
+        "given": "Asier",
+        "family": "Roa"
+      },
+      {
+        "given": "Dmitriy",
+        "family": "Smirnov"
+      },
+      {
+        "given": "Richard E.",
+        "family": "Smith"
+      },
+      {
+        "given": "Ian",
+        "family": "Streeter"
+      },
+      {
+        "given": "Anja",
+        "family": "Thormann"
+      },
+      {
+        "given": "Iliana",
+        "family": "Toneva"
+      },
+      {
+        "given": "Brendan",
+        "family": "Vaughan"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David R.",
+        "family": "Bentley"
+      },
+      {
+        "given": "Russell",
+        "family": "Grocock"
+      },
+      {
+        "given": "Sean",
+        "family": "Humphray"
+      },
+      {
+        "given": "Terena",
+        "family": "James"
+      },
+      {
+        "given": "Zoya",
+        "family": "Kingsbury"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Hans",
+        "family": "Lehrach"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Ralf",
+        "family": "Sudbrak"
+      },
+      {
+        "given": "Marcus W.",
+        "family": "Albrecht"
+      },
+      {
+        "given": "Vyacheslav S.",
+        "family": "Amstislavskiy"
+      },
+      {
+        "given": "Tatiana A.",
+        "family": "Borodina"
+      },
+      {
+        "given": "Matthias",
+        "family": "Lienhard"
+      },
+      {
+        "given": "Florian",
+        "family": "Mertes"
+      },
+      {
+        "given": "Marc",
+        "family": "Sultan"
+      },
+      {
+        "given": "Bernd",
+        "family": "Timmermann"
+      },
+      {
+        "given": "Marie-Laure",
+        "family": "Yaspo"
+      },
+      {
+        "suffix": "(Co-Princi",
+        "given": "Elaine R.",
+        "family": "Mardis"
+      },
+      {
+        "suffix": "(Co-Princi",
+        "given": "Richard K.",
+        "family": "Wilson"
+      },
+      {
+        "given": "Lucinda",
+        "family": "Fulton"
+      },
+      {
+        "given": "Robert",
+        "family": "Fulton"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen T.",
+        "family": "Sherry"
+      },
+      {
+        "given": "Victor",
+        "family": "Ananiev"
+      },
+      {
+        "given": "Zinaida",
+        "family": "Belaia"
+      },
+      {
+        "given": "Dimitriy",
+        "family": "Beloslyudtsev"
+      },
+      {
+        "given": "Nathan",
+        "family": "Bouk"
+      },
+      {
+        "given": "Chao",
+        "family": "Chen"
+      },
+      {
+        "given": "Deanna",
+        "family": "Church"
+      },
+      {
+        "given": "Robert",
+        "family": "Cohen"
+      },
+      {
+        "given": "Charles",
+        "family": "Cook"
+      },
+      {
+        "given": "John",
+        "family": "Garner"
+      },
+      {
+        "given": "Timothy",
+        "family": "Hefferon"
+      },
+      {
+        "given": "Mikhail",
+        "family": "Kimelman"
+      },
+      {
+        "given": "Chunlei",
+        "family": "Liu"
+      },
+      {
+        "given": "John",
+        "family": "Lopez"
+      },
+      {
+        "given": "Peter",
+        "family": "Meric"
+      },
+      {
+        "given": "Chris",
+        "family": "O’Sullivan"
+      },
+      {
+        "given": "Yuri",
+        "family": "Ostapchuk"
+      },
+      {
+        "given": "Lon",
+        "family": "Phan"
+      },
+      {
+        "given": "Sergiy",
+        "family": "Ponomarov"
+      },
+      {
+        "given": "Valerie",
+        "family": "Schneider"
+      },
+      {
+        "given": "Eugene",
+        "family": "Shekhtman"
+      },
+      {
+        "given": "Karl",
+        "family": "Sirotkin"
+      },
+      {
+        "given": "Douglas",
+        "family": "Slotta"
+      },
+      {
+        "given": "Hua",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard M.",
+        "family": "Durbin"
+      },
+      {
+        "given": "Senduran",
+        "family": "Balasubramaniam"
+      },
+      {
+        "given": "John",
+        "family": "Burton"
+      },
+      {
+        "given": "Petr",
+        "family": "Danecek"
+      },
+      {
+        "given": "Thomas M.",
+        "family": "Keane"
+      },
+      {
+        "given": "Anja",
+        "family": "Kolb-Kokocinski"
+      },
+      {
+        "given": "Shane",
+        "family": "McCarthy"
+      },
+      {
+        "given": "James",
+        "family": "Stalker"
+      },
+      {
+        "given": "Michael",
+        "family": "Quail"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jeanette P.",
+        "family": "Schmidt"
+      },
+      {
+        "given": "Christopher J.",
+        "family": "Davies"
+      },
+      {
+        "given": "Jeremy",
+        "family": "Gollub"
+      },
+      {
+        "given": "Teresa",
+        "family": "Webster"
+      },
+      {
+        "given": "Brant",
+        "family": "Wong"
+      },
+      {
+        "given": "Yiping",
+        "family": "Zhan"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Adam",
+        "family": "Auton"
+      },
+      {
+        "given": "Christopher L.",
+        "family": "Campbell"
+      },
+      {
+        "given": "Yu",
+        "family": "Kong"
+      },
+      {
+        "given": "Anthony",
+        "family": "Marcketta"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Fuli",
+        "family": "Yu"
+      },
+      {
+        "given": "Lilian",
+        "family": "Antunes"
+      },
+      {
+        "given": "Matthew",
+        "family": "Bainbridge"
+      },
+      {
+        "given": "Donna",
+        "family": "Muzny"
+      },
+      {
+        "given": "Aniko",
+        "family": "Sabo"
+      },
+      {
+        "given": "Zhuoyi",
+        "family": "Huang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jun",
+        "family": "Wang"
+      },
+      {
+        "given": "Lachlan J. M.",
+        "family": "Coin"
+      },
+      {
+        "given": "Lin",
+        "family": "Fang"
+      },
+      {
+        "given": "Xiaosen",
+        "family": "Guo"
+      },
+      {
+        "given": "Xin",
+        "family": "Jin"
+      },
+      {
+        "given": "Guoqing",
+        "family": "Li"
+      },
+      {
+        "given": "Qibin",
+        "family": "Li"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Zhenyu",
+        "family": "Li"
+      },
+      {
+        "given": "Haoxiang",
+        "family": "Lin"
+      },
+      {
+        "given": "Binghang",
+        "family": "Liu"
+      },
+      {
+        "given": "Ruibang",
+        "family": "Luo"
+      },
+      {
+        "given": "Haojing",
+        "family": "Shao"
+      },
+      {
+        "given": "Yinlong",
+        "family": "Xie"
+      },
+      {
+        "given": "Chen",
+        "family": "Ye"
+      },
+      {
+        "given": "Chang",
+        "family": "Yu"
+      },
+      {
+        "given": "Fan",
+        "family": "Zhang"
+      },
+      {
+        "given": "Hancheng",
+        "family": "Zheng"
+      },
+      {
+        "given": "Hongmei",
+        "family": "Zhu"
+      },
+      {
+        "given": "Can",
+        "family": "Alkan"
+      },
+      {
+        "given": "Elif",
+        "family": "Dal"
+      },
+      {
+        "given": "Fatma",
+        "family": "Kahveci"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gabor T.",
+        "family": "Marth"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Erik P.",
+        "family": "Garrison"
+      },
+      {
+        "given": "Deniz",
+        "family": "Kural"
+      },
+      {
+        "given": "Wan-Ping",
+        "family": "Lee"
+      },
+      {
+        "given": "Wen",
+        "family": "Fung Leong"
+      },
+      {
+        "given": "Michael",
+        "family": "Stromberg"
+      },
+      {
+        "given": "Alistair N.",
+        "family": "Ward"
+      },
+      {
+        "given": "Jiantao",
+        "family": "Wu"
+      },
+      {
+        "given": "Mengyao",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark J.",
+        "family": "Daly"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Mark A.",
+        "family": "DePristo"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Robert E.",
+        "family": "Handsaker"
+      },
+      {
+        "given": "David M.",
+        "family": "Altshuler"
+      },
+      {
+        "given": "Eric",
+        "family": "Banks"
+      },
+      {
+        "given": "Gaurav",
+        "family": "Bhatia"
+      },
+      {
+        "given": "Guillermo",
+        "family": "del Angel"
+      },
+      {
+        "given": "Stacey B.",
+        "family": "Gabriel"
+      },
+      {
+        "given": "Giulio",
+        "family": "Genovese"
+      },
+      {
+        "given": "Namrata",
+        "family": "Gupta"
+      },
+      {
+        "given": "Heng",
+        "family": "Li"
+      },
+      {
+        "given": "Seva",
+        "family": "Kashin"
+      },
+      {
+        "given": "Eric S.",
+        "family": "Lander"
+      },
+      {
+        "given": "Steven A.",
+        "family": "McCarroll"
+      },
+      {
+        "given": "James C.",
+        "family": "Nemesh"
+      },
+      {
+        "given": "Ryan E.",
+        "family": "Poplin"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Seungtai C.",
+        "family": "Yoon"
+      },
+      {
+        "given": "Jayon",
+        "family": "Lihm"
+      },
+      {
+        "given": "Vladimir",
+        "family": "Makarov"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Andrew G.",
+        "family": "Clark"
+      },
+      {
+        "given": "Srikanth",
+        "family": "Gottipati"
+      },
+      {
+        "given": "Alon",
+        "family": "Keinan"
+      },
+      {
+        "given": "Juan L.",
+        "family": "Rodriguez-Flores"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jan O.",
+        "family": "Korbel"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Tobias",
+        "family": "Rausch"
+      },
+      {
+        "given": "Markus H.",
+        "family": "Fritz"
+      },
+      {
+        "given": "Adrian M.",
+        "family": "Stütz"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Kathryn",
+        "family": "Beal"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Avik",
+        "family": "Datta"
+      },
+      {
+        "given": "Javier",
+        "family": "Herrero"
+      },
+      {
+        "given": "William M.",
+        "family": "McLaren"
+      },
+      {
+        "given": "Graham R. S.",
+        "family": "Ritchie"
+      },
+      {
+        "given": "Richard E.",
+        "family": "Smith"
+      },
+      {
+        "given": "Daniel",
+        "family": "Zerbino"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Pardis C.",
+        "family": "Sabeti"
+      },
+      {
+        "given": "Ilya",
+        "family": "Shlyakhter"
+      },
+      {
+        "given": "Stephen F.",
+        "family": "Schaffner"
+      },
+      {
+        "given": "Joseph",
+        "family": "Vitti"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David N.",
+        "family": "Cooper"
+      },
+      {
+        "given": "Edward V.",
+        "family": "Ball"
+      },
+      {
+        "given": "Peter D.",
+        "family": "Stenson"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David R.",
+        "family": "Bentley"
+      },
+      {
+        "given": "Bret",
+        "family": "Barnes"
+      },
+      {
+        "given": "Markus",
+        "family": "Bauer"
+      },
+      {
+        "given": "R.",
+        "family": "Keira Cheetham"
+      },
+      {
+        "given": "Anthony",
+        "family": "Cox"
+      },
+      {
+        "given": "Michael",
+        "family": "Eberle"
+      },
+      {
+        "given": "Sean",
+        "family": "Humphray"
+      },
+      {
+        "given": "Scott",
+        "family": "Kahn"
+      },
+      {
+        "given": "Lisa",
+        "family": "Murray"
+      },
+      {
+        "given": "John",
+        "family": "Peden"
+      },
+      {
+        "given": "Richard",
+        "family": "Shaw"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Eimear E.",
+        "family": "Kenny"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark A.",
+        "family": "Batzer"
+      },
+      {
+        "given": "Miriam K.",
+        "family": "Konkel"
+      },
+      {
+        "given": "Jerilyn A.",
+        "family": "Walker"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Daniel G.",
+        "family": "MacArthur"
+      },
+      {
+        "given": "Monkol",
+        "family": "Lek"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Ralf",
+        "family": "Sudbrak"
+      },
+      {
+        "given": "Vyacheslav S.",
+        "family": "Amstislavskiy"
+      },
+      {
+        "given": "Ralf",
+        "family": "Herwig"
+      },
+      {
+        "suffix": "(Co-Princi",
+        "given": "Elaine R.",
+        "family": "Mardis"
+      },
+      {
+        "given": "Li",
+        "family": "Ding"
+      },
+      {
+        "given": "Daniel C.",
+        "family": "Koboldt"
+      },
+      {
+        "given": "David",
+        "family": "Larson"
+      },
+      {
+        "given": "Kai",
+        "family": "Ye"
+      },
+      {
+        "given": "Simon",
+        "family": "Gravel"
+      },
+      {
+        "given": "Anand",
+        "family": "Swaroop"
+      },
+      {
+        "given": "Emily",
+        "family": "Chew"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Tuuli",
+        "family": "Lappalainen"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Yaniv",
+        "family": "Erlich"
+      },
+      {
+        "given": "Melissa",
+        "family": "Gymrek"
+      },
+      {
+        "given": "Thomas",
+        "family": "Frederick Willems"
+      },
+      {
+        "given": "Jared T.",
+        "family": "Simpson"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark D.",
+        "family": "Shriver"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jeffrey A.",
+        "family": "Rosenfeld"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Carlos D.",
+        "family": "Bustamante"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen B.",
+        "family": "Montgomery"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Francisco M.",
+        "family": "De La Vega"
+      },
+      {
+        "given": "Jake K.",
+        "family": "Byrnes"
+      },
+      {
+        "given": "Andrew W.",
+        "family": "Carroll"
+      },
+      {
+        "given": "Marianne K.",
+        "family": "DeGorter"
+      },
+      {
+        "given": "Phil",
+        "family": "Lacroute"
+      },
+      {
+        "given": "Brian K.",
+        "family": "Maples"
+      },
+      {
+        "given": "Alicia R.",
+        "family": "Martin"
+      },
+      {
+        "given": "Andres",
+        "family": "Moreno-Estrada"
+      },
+      {
+        "given": "Suyash S.",
+        "family": "Shringarpure"
+      },
+      {
+        "given": "Fouad",
+        "family": "Zakharia"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Eran",
+        "family": "Halperin"
+      },
+      {
+        "given": "Yael",
+        "family": "Baran"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Charles",
+        "family": "Lee"
+      },
+      {
+        "given": "Eliza",
+        "family": "Cerveira"
+      },
+      {
+        "given": "Jaeho",
+        "family": "Hwang"
+      },
+      {
+        "suffix": "(Co-Projec",
+        "given": "Ankit",
+        "family": "Malhotra"
+      },
+      {
+        "given": "Dariusz",
+        "family": "Plewczynski"
+      },
+      {
+        "given": "Kamen",
+        "family": "Radew"
+      },
+      {
+        "given": "Mallory",
+        "family": "Romanovitch"
+      },
+      {
+        "suffix": "(Co-Projec",
+        "given": "Chengsheng",
+        "family": "Zhang"
+      },
+      {
+        "given": "Fiona C. L.",
+        "family": "Hyland"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David W.",
+        "family": "Craig"
+      },
+      {
+        "given": "Alexis",
+        "family": "Christoforides"
+      },
+      {
+        "given": "Nils",
+        "family": "Homer"
+      },
+      {
+        "given": "Tyler",
+        "family": "Izatt"
+      },
+      {
+        "given": "Ahmet A.",
+        "family": "Kurdoglu"
+      },
+      {
+        "given": "Shripad A.",
+        "family": "Sinari"
+      },
+      {
+        "given": "Kevin",
+        "family": "Squire"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen T.",
+        "family": "Sherry"
+      },
+      {
+        "given": "Chunlin",
+        "family": "Xiao"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jonathan",
+        "family": "Sebat"
+      },
+      {
+        "given": "Danny",
+        "family": "Antaki"
+      },
+      {
+        "given": "Madhusudan",
+        "family": "Gujral"
+      },
+      {
+        "given": "Amina",
+        "family": "Noor"
+      },
+      {
+        "given": "Kenny",
+        "family": "Ye"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Esteban G.",
+        "family": "Burchard"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Ryan D.",
+        "family": "Hernandez"
+      },
+      {
+        "given": "Christopher R.",
+        "family": "Gignoux"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David",
+        "family": "Haussler"
+      },
+      {
+        "given": "Sol J.",
+        "family": "Katzman"
+      },
+      {
+        "given": "W.",
+        "family": "James Kent"
+      },
+      {
+        "given": "Bryan",
+        "family": "Howie"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Andres",
+        "family": "Ruiz-Linares"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Emmanouil T.",
+        "family": "Dermitzakis"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Scott E.",
+        "family": "Devine"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Hyun",
+        "family": "Min Kang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jeffrey M.",
+        "family": "Kidd"
+      },
+      {
+        "given": "Tom",
+        "family": "Blackwell"
+      },
+      {
+        "given": "Sean",
+        "family": "Caron"
+      },
+      {
+        "given": "Wei",
+        "family": "Chen"
+      },
+      {
+        "given": "Sarah",
+        "family": "Emery"
+      },
+      {
+        "given": "Lars",
+        "family": "Fritsche"
+      },
+      {
+        "given": "Christian",
+        "family": "Fuchsberger"
+      },
+      {
+        "given": "Goo",
+        "family": "Jun"
+      },
+      {
+        "given": "Bingshan",
+        "family": "Li"
+      },
+      {
+        "given": "Robert",
+        "family": "Lyons"
+      },
+      {
+        "given": "Chris",
+        "family": "Scheller"
+      },
+      {
+        "given": "Carlo",
+        "family": "Sidore"
+      },
+      {
+        "given": "Shiya",
+        "family": "Song"
+      },
+      {
+        "given": "Elzbieta",
+        "family": "Sliwerska"
+      },
+      {
+        "given": "Daniel",
+        "family": "Taliun"
+      },
+      {
+        "given": "Adrian",
+        "family": "Tan"
+      },
+      {
+        "given": "Ryan",
+        "family": "Welch"
+      },
+      {
+        "given": "Mary",
+        "family": "Kate Wing"
+      },
+      {
+        "given": "Xiaowei",
+        "family": "Zhan"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Philip",
+        "family": "Awadalla"
+      },
+      {
+        "given": "Alan",
+        "family": "Hodgkinson"
+      },
+      {
+        "given": "Yun",
+        "family": "Li"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Xinghua",
+        "family": "Shi"
+      },
+      {
+        "given": "Andrew",
+        "family": "Quitadamo"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gerton",
+        "family": "Lunter"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jonathan L.",
+        "family": "Marchini"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Simon",
+        "family": "Myers"
+      },
+      {
+        "given": "Claire",
+        "family": "Churchhouse"
+      },
+      {
+        "given": "Olivier",
+        "family": "Delaneau"
+      },
+      {
+        "given": "Anjali",
+        "family": "Gupta-Hinch"
+      },
+      {
+        "given": "Warren",
+        "family": "Kretzschmar"
+      },
+      {
+        "given": "Zamin",
+        "family": "Iqbal"
+      },
+      {
+        "given": "Iain",
+        "family": "Mathieson"
+      },
+      {
+        "given": "Androniki",
+        "family": "Menelaou"
+      },
+      {
+        "given": "Andy",
+        "family": "Rimmer"
+      },
+      {
+        "given": "Dionysia K.",
+        "family": "Xifara"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Taras K.",
+        "family": "Oleksyk"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Yunxin",
+        "family": "Fu"
+      },
+      {
+        "given": "Xiaoming",
+        "family": "Liu"
+      },
+      {
+        "given": "Momiao",
+        "family": "Xiong"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Lynn",
+        "family": "Jorde"
+      },
+      {
+        "given": "David",
+        "family": "Witherspoon"
+      },
+      {
+        "given": "Jinchuan",
+        "family": "Xing"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Evan E.",
+        "family": "Eichler"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Brian L.",
+        "family": "Browning"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Sharon R.",
+        "family": "Browning"
+      },
+      {
+        "given": "Fereydoun",
+        "family": "Hormozdiari"
+      },
+      {
+        "given": "Peter H.",
+        "family": "Sudmant"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Ekta",
+        "family": "Khurana"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard M.",
+        "family": "Durbin"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Matthew E.",
+        "family": "Hurles"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Chris",
+        "family": "Tyler-Smith"
+      },
+      {
+        "given": "Cornelis A.",
+        "family": "Albers"
+      },
+      {
+        "given": "Qasim",
+        "family": "Ayub"
+      },
+      {
+        "given": "Senduran",
+        "family": "Balasubramaniam"
+      },
+      {
+        "given": "Yuan",
+        "family": "Chen"
+      },
+      {
+        "given": "Vincenza",
+        "family": "Colonna"
+      },
+      {
+        "given": "Petr",
+        "family": "Danecek"
+      },
+      {
+        "given": "Luke",
+        "family": "Jostins"
+      },
+      {
+        "given": "Thomas M.",
+        "family": "Keane"
+      },
+      {
+        "given": "Shane",
+        "family": "McCarthy"
+      },
+      {
+        "given": "Klaudia",
+        "family": "Walter"
+      },
+      {
+        "given": "Yali",
+        "family": "Xue"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark B.",
+        "family": "Gerstein"
+      },
+      {
+        "given": "Alexej",
+        "family": "Abyzov"
+      },
+      {
+        "given": "Suganthi",
+        "family": "Balasubramanian"
+      },
+      {
+        "given": "Jieming",
+        "family": "Chen"
+      },
+      {
+        "given": "Declan",
+        "family": "Clarke"
+      },
+      {
+        "given": "Yao",
+        "family": "Fu"
+      },
+      {
+        "given": "Arif O.",
+        "family": "Harmanci"
+      },
+      {
+        "given": "Mike",
+        "family": "Jin"
+      },
+      {
+        "given": "Donghoon",
+        "family": "Lee"
+      },
+      {
+        "given": "Jeremy",
+        "family": "Liu"
+      },
+      {
+        "given": "Xinmeng",
+        "family": "Jasmine Mu"
+      },
+      {
+        "given": "Jing",
+        "family": "Zhang"
+      },
+      {
+        "given": "Yan",
+        "family": "Zhang"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Ruibang",
+        "family": "Luo"
+      },
+      {
+        "given": "Hongmei",
+        "family": "Zhu"
+      },
+      {
+        "given": "Can",
+        "family": "Alkan"
+      },
+      {
+        "given": "Elif",
+        "family": "Dal"
+      },
+      {
+        "given": "Fatma",
+        "family": "Kahveci"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gabor T.",
+        "family": "Marth"
+      },
+      {
+        "given": "Erik P.",
+        "family": "Garrison"
+      },
+      {
+        "given": "Deniz",
+        "family": "Kural"
+      },
+      {
+        "given": "Wan-Ping",
+        "family": "Lee"
+      },
+      {
+        "given": "Alistair N.",
+        "family": "Ward"
+      },
+      {
+        "given": "Jiantao",
+        "family": "Wu"
+      },
+      {
+        "given": "Mengyao",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Steven A.",
+        "family": "McCarroll"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Robert E.",
+        "family": "Handsaker"
+      },
+      {
+        "given": "David M.",
+        "family": "Altshuler"
+      },
+      {
+        "given": "Eric",
+        "family": "Banks"
+      },
+      {
+        "given": "Guillermo",
+        "family": "del Angel"
+      },
+      {
+        "given": "Giulio",
+        "family": "Genovese"
+      },
+      {
+        "given": "Chris",
+        "family": "Hartl"
+      },
+      {
+        "given": "Heng",
+        "family": "Li"
+      },
+      {
+        "given": "Seva",
+        "family": "Kashin"
+      },
+      {
+        "given": "James C.",
+        "family": "Nemesh"
+      },
+      {
+        "given": "Khalid",
+        "family": "Shakir"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Seungtai C.",
+        "family": "Yoon"
+      },
+      {
+        "given": "Jayon",
+        "family": "Lihm"
+      },
+      {
+        "given": "Vladimir",
+        "family": "Makarov"
+      },
+      {
+        "given": "Jeremiah",
+        "family": "Degenhardt"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jan O.",
+        "family": "Korbel"
+      },
+      {
+        "given": "Markus H.",
+        "family": "Fritz"
+      },
+      {
+        "given": "Sascha",
+        "family": "Meiers"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Raeder"
+      },
+      {
+        "given": "Tobias",
+        "family": "Rausch"
+      },
+      {
+        "given": "Adrian M.",
+        "family": "Stütz"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Francesco",
+        "family": "Paolo Casale"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Richard E.",
+        "family": "Smith"
+      },
+      {
+        "given": "Oliver",
+        "family": "Stegle"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David R.",
+        "family": "Bentley"
+      },
+      {
+        "given": "Bret",
+        "family": "Barnes"
+      },
+      {
+        "given": "R.",
+        "family": "Keira Cheetham"
+      },
+      {
+        "given": "Michael",
+        "family": "Eberle"
+      },
+      {
+        "given": "Sean",
+        "family": "Humphray"
+      },
+      {
+        "given": "Scott",
+        "family": "Kahn"
+      },
+      {
+        "given": "Lisa",
+        "family": "Murray"
+      },
+      {
+        "given": "Richard",
+        "family": "Shaw"
+      },
+      {
+        "given": "Eric-Wubbo",
+        "family": "Lameijer"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark A.",
+        "family": "Batzer"
+      },
+      {
+        "given": "Miriam K.",
+        "family": "Konkel"
+      },
+      {
+        "given": "Jerilyn A.",
+        "family": "Walker"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Li",
+        "family": "Ding"
+      },
+      {
+        "given": "Ira",
+        "family": "Hall"
+      },
+      {
+        "given": "Kai",
+        "family": "Ye"
+      },
+      {
+        "given": "Phil",
+        "family": "Lacroute"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Charles",
+        "family": "Lee"
+      },
+      {
+        "given": "Eliza",
+        "family": "Cerveira"
+      },
+      {
+        "given": "Ankit",
+        "family": "Malhotra"
+      },
+      {
+        "given": "Jaeho",
+        "family": "Hwang"
+      },
+      {
+        "given": "Dariusz",
+        "family": "Plewczynski"
+      },
+      {
+        "given": "Kamen",
+        "family": "Radew"
+      },
+      {
+        "given": "Mallory",
+        "family": "Romanovitch"
+      },
+      {
+        "given": "Chengsheng",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David W.",
+        "family": "Craig"
+      },
+      {
+        "given": "Nils",
+        "family": "Homer"
+      },
+      {
+        "given": "Deanna",
+        "family": "Church"
+      },
+      {
+        "given": "Chunlin",
+        "family": "Xiao"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jonathan",
+        "family": "Sebat"
+      },
+      {
+        "given": "Danny",
+        "family": "Antaki"
+      },
+      {
+        "given": "Vineet",
+        "family": "Bafna"
+      },
+      {
+        "given": "Jacob",
+        "family": "Michaelson"
+      },
+      {
+        "given": "Kenny",
+        "family": "Ye"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Scott E.",
+        "family": "Devine"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Eugene J.",
+        "family": "Gardner"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jeffrey M.",
+        "family": "Kidd"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Ryan E.",
+        "family": "Mills"
+      },
+      {
+        "given": "Gargi",
+        "family": "Dayama"
+      },
+      {
+        "given": "Sarah",
+        "family": "Emery"
+      },
+      {
+        "given": "Goo",
+        "family": "Jun"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Xinghua",
+        "family": "Shi"
+      },
+      {
+        "given": "Andrew",
+        "family": "Quitadamo"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gerton",
+        "family": "Lunter"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "suffix": "(Principle",
+        "given": "Ken",
+        "family": "Chen"
+      },
+      {
+        "given": "Xian",
+        "family": "Fan"
+      },
+      {
+        "given": "Zechen",
+        "family": "Chong"
+      },
+      {
+        "given": "Tenghui",
+        "family": "Chen"
+      },
+      {
+        "given": "David",
+        "family": "Witherspoon"
+      },
+      {
+        "given": "Jinchuan",
+        "family": "Xing"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Evan E.",
+        "family": "Eichler"
+      },
+      {
+        "given": "Mark J.",
+        "family": "Chaisson"
+      },
+      {
+        "given": "Fereydoun",
+        "family": "Hormozdiari"
+      },
+      {
+        "given": "John",
+        "family": "Huddleston"
+      },
+      {
+        "given": "Maika",
+        "family": "Malig"
+      },
+      {
+        "given": "Bradley J.",
+        "family": "Nelson"
+      },
+      {
+        "given": "Peter H.",
+        "family": "Sudmant"
+      },
+      {
+        "given": "Nicholas F.",
+        "family": "Parrish"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Ekta",
+        "family": "Khurana"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Matthew E.",
+        "family": "Hurles"
+      },
+      {
+        "given": "Ben",
+        "family": "Blackburne"
+      },
+      {
+        "given": "Sarah J.",
+        "family": "Lindsay"
+      },
+      {
+        "given": "Zemin",
+        "family": "Ning"
+      },
+      {
+        "given": "Klaudia",
+        "family": "Walter"
+      },
+      {
+        "given": "Yujun",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark B.",
+        "family": "Gerstein"
+      },
+      {
+        "given": "Alexej",
+        "family": "Abyzov"
+      },
+      {
+        "given": "Jieming",
+        "family": "Chen"
+      },
+      {
+        "given": "Declan",
+        "family": "Clarke"
+      },
+      {
+        "given": "Hugo",
+        "family": "Lam"
+      },
+      {
+        "given": "Xinmeng",
+        "family": "Jasmine Mu"
+      },
+      {
+        "given": "Cristina",
+        "family": "Sisu"
+      },
+      {
+        "given": "Jing",
+        "family": "Zhang"
+      },
+      {
+        "given": "Yan",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Fuli",
+        "family": "Yu"
+      },
+      {
+        "given": "Matthew",
+        "family": "Bainbridge"
+      },
+      {
+        "given": "Danny",
+        "family": "Challis"
+      },
+      {
+        "given": "Uday S.",
+        "family": "Evani"
+      },
+      {
+        "given": "Christie",
+        "family": "Kovar"
+      },
+      {
+        "given": "James",
+        "family": "Lu"
+      },
+      {
+        "given": "Donna",
+        "family": "Muzny"
+      },
+      {
+        "given": "Uma",
+        "family": "Nagaswamy"
+      },
+      {
+        "given": "Jeffrey G.",
+        "family": "Reid"
+      },
+      {
+        "given": "Aniko",
+        "family": "Sabo"
+      },
+      {
+        "given": "Jin",
+        "family": "Yu"
+      },
+      {
+        "given": "Xiaosen",
+        "family": "Guo"
+      },
+      {
+        "given": "Wangshen",
+        "family": "Li"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Renhua",
+        "family": "Wu"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gabor T.",
+        "family": "Marth"
+      },
+      {
+        "given": "Erik P.",
+        "family": "Garrison"
+      },
+      {
+        "given": "Wen",
+        "family": "Fung Leong"
+      },
+      {
+        "given": "Alistair N.",
+        "family": "Ward"
+      },
+      {
+        "given": "Guillermo",
+        "family": "del Angel"
+      },
+      {
+        "given": "Mark A.",
+        "family": "DePristo"
+      },
+      {
+        "given": "Stacey B.",
+        "family": "Gabriel"
+      },
+      {
+        "given": "Namrata",
+        "family": "Gupta"
+      },
+      {
+        "given": "Chris",
+        "family": "Hartl"
+      },
+      {
+        "given": "Ryan E.",
+        "family": "Poplin"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Andrew G.",
+        "family": "Clark"
+      },
+      {
+        "given": "Juan L.",
+        "family": "Rodriguez-Flores"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Richard E.",
+        "family": "Smith"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Daniel G.",
+        "family": "MacArthur"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Elaine R.",
+        "family": "Mardis"
+      },
+      {
+        "given": "Robert",
+        "family": "Fulton"
+      },
+      {
+        "given": "Daniel C.",
+        "family": "Koboldt"
+      },
+      {
+        "given": "Simon",
+        "family": "Gravel"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Carlos D.",
+        "family": "Bustamante"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David W.",
+        "family": "Craig"
+      },
+      {
+        "given": "Alexis",
+        "family": "Christoforides"
+      },
+      {
+        "given": "Nils",
+        "family": "Homer"
+      },
+      {
+        "given": "Tyler",
+        "family": "Izatt"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen T.",
+        "family": "Sherry"
+      },
+      {
+        "given": "Chunlin",
+        "family": "Xiao"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Emmanouil T.",
+        "family": "Dermitzakis"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "given": "Hyun",
+        "family": "Min Kang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark B.",
+        "family": "Gerstein"
+      },
+      {
+        "given": "Suganthi",
+        "family": "Balasubramanian"
+      },
+      {
+        "given": "Lukas",
+        "family": "Habegger"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Haiyuan",
+        "family": "Yu"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Fiona",
+        "family": "Cunningham"
+      },
+      {
+        "given": "Ian",
+        "family": "Dunham"
+      },
+      {
+        "given": "Daniel",
+        "family": "Zerbino"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Kasper",
+        "family": "Lage"
+      },
+      {
+        "given": "Jakob",
+        "family": "Berg Jespersen"
+      },
+      {
+        "given": "Heiko",
+        "family": "Horn"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen B.",
+        "family": "Montgomery"
+      },
+      {
+        "given": "Marianne K.",
+        "family": "DeGorter"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Ekta",
+        "family": "Khurana"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Chris",
+        "family": "Tyler-Smith"
+      },
+      {
+        "given": "Yuan",
+        "family": "Chen"
+      },
+      {
+        "given": "Vincenza",
+        "family": "Colonna"
+      },
+      {
+        "given": "Yali",
+        "family": "Xue"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Mark B.",
+        "family": "Gerstein"
+      },
+      {
+        "given": "Suganthi",
+        "family": "Balasubramanian"
+      },
+      {
+        "given": "Yao",
+        "family": "Fu"
+      },
+      {
+        "given": "Donghoon",
+        "family": "Kim"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Adam",
+        "family": "Auton"
+      },
+      {
+        "given": "Anthony",
+        "family": "Marcketta"
+      },
+      {
+        "given": "Rob",
+        "family": "Desalle"
+      },
+      {
+        "given": "Apurva",
+        "family": "Narechania"
+      },
+      {
+        "given": "Melissa A.",
+        "family": "Wilson Sayres"
+      },
+      {
+        "given": "Erik P.",
+        "family": "Garrison"
+      },
+      {
+        "given": "Robert E.",
+        "family": "Handsaker"
+      },
+      {
+        "given": "Seva",
+        "family": "Kashin"
+      },
+      {
+        "given": "Steven A.",
+        "family": "McCarroll"
+      },
+      {
+        "given": "Juan L.",
+        "family": "Rodriguez-Flores"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "given": "Yaniv",
+        "family": "Erlich"
+      },
+      {
+        "given": "Melissa",
+        "family": "Gymrek"
+      },
+      {
+        "given": "Thomas",
+        "family": "Frederick Willems"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Carlos D.",
+        "family": "Bustamante"
+      },
+      {
+        "given": "Fernando L.",
+        "family": "Mendez"
+      },
+      {
+        "given": "G.",
+        "family": "David Poznik"
+      },
+      {
+        "given": "Peter A.",
+        "family": "Underhill"
+      },
+      {
+        "given": "Charles",
+        "family": "Lee"
+      },
+      {
+        "given": "Eliza",
+        "family": "Cerveira"
+      },
+      {
+        "given": "Ankit",
+        "family": "Malhotra"
+      },
+      {
+        "given": "Mallory",
+        "family": "Romanovitch"
+      },
+      {
+        "given": "Chengsheng",
+        "family": "Zhang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Lachlan",
+        "family": "Coin"
+      },
+      {
+        "given": "Haojing",
+        "family": "Shao"
+      },
+      {
+        "given": "David",
+        "family": "Mittelman"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Chris",
+        "family": "Tyler-Smith"
+      },
+      {
+        "given": "Qasim",
+        "family": "Ayub"
+      },
+      {
+        "given": "Ruby",
+        "family": "Banerjee"
+      },
+      {
+        "given": "Maria",
+        "family": "Cerezo"
+      },
+      {
+        "given": "Yuan",
+        "family": "Chen"
+      },
+      {
+        "given": "Thomas W.",
+        "family": "Fitzgerald"
+      },
+      {
+        "given": "Sandra",
+        "family": "Louzada"
+      },
+      {
+        "given": "Andrea",
+        "family": "Massaia"
+      },
+      {
+        "given": "Shane",
+        "family": "McCarthy"
+      },
+      {
+        "given": "Graham R.",
+        "family": "Ritchie"
+      },
+      {
+        "given": "Yali",
+        "family": "Xue"
+      },
+      {
+        "given": "Fengtang",
+        "family": "Yang"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "given": "Christie",
+        "family": "Kovar"
+      },
+      {
+        "given": "Divya",
+        "family": "Kalra"
+      },
+      {
+        "given": "Walker",
+        "family": "Hale"
+      },
+      {
+        "given": "Donna",
+        "family": "Muzny"
+      },
+      {
+        "given": "Jeffrey G.",
+        "family": "Reid"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Jun",
+        "family": "Wang"
+      },
+      {
+        "given": "Xu",
+        "family": "Dan"
+      },
+      {
+        "given": "Xiaosen",
+        "family": "Guo"
+      },
+      {
+        "given": "Guoqing",
+        "family": "Li"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Chen",
+        "family": "Ye"
+      },
+      {
+        "given": "Xiaole",
+        "family": "Zheng"
+      },
+      {
+        "given": "David M.",
+        "family": "Altshuler"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Paul",
+        "family": "Flicek"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Laura",
+        "family": "Clarke"
+      },
+      {
+        "given": "Xiangqun",
+        "family": "Zheng-Bradley"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David R.",
+        "family": "Bentley"
+      },
+      {
+        "given": "Anthony",
+        "family": "Cox"
+      },
+      {
+        "given": "Sean",
+        "family": "Humphray"
+      },
+      {
+        "given": "Scott",
+        "family": "Kahn"
+      },
+      {
+        "suffix": "(Project L",
+        "given": "Ralf",
+        "family": "Sudbrak"
+      },
+      {
+        "given": "Marcus W.",
+        "family": "Albrecht"
+      },
+      {
+        "given": "Matthias",
+        "family": "Lienhard"
+      },
+      {
+        "given": "David",
+        "family": "Larson"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David W.",
+        "family": "Craig"
+      },
+      {
+        "given": "Tyler",
+        "family": "Izatt"
+      },
+      {
+        "given": "Ahmet A.",
+        "family": "Kurdoglu"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Stephen T.",
+        "family": "Sherry"
+      },
+      {
+        "given": "Chunlin",
+        "family": "Xiao"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "David",
+        "family": "Haussler"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "suffix": "(Principal",
+        "given": "Richard M.",
+        "family": "Durbin"
+      },
+      {
+        "given": "Senduran",
+        "family": "Balasubramaniam"
+      },
+      {
+        "given": "Thomas M.",
+        "family": "Keane"
+      },
+      {
+        "given": "Shane",
+        "family": "McCarthy"
+      },
+      {
+        "given": "James",
+        "family": "Stalker"
+      },
+      {
+        "suffix": "(Co-Chair)",
+        "given": "Aravinda",
+        "family": "Chakravarti"
+      },
+      {
+        "suffix": "(Co-Chair)",
+        "given": "Bartha M.",
+        "family": "Knoppers"
+      },
+      {
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {
+        "given": "Kathleen C.",
+        "family": "Barnes"
+      },
+      {
+        "given": "Christine",
+        "family": "Beiswanger"
+      },
+      {
+        "given": "Esteban G.",
+        "family": "Burchard"
+      },
+      {
+        "given": "Carlos D.",
+        "family": "Bustamante"
+      },
+      {
+        "given": "Hongyu",
+        "family": "Cai"
+      },
+      {
+        "given": "Hongzhi",
+        "family": "Cao"
+      },
+      {
+        "given": "Richard M.",
+        "family": "Durbin"
+      },
+      {
+        "given": "Norman P.",
+        "family": "Gerry"
+      },
+      {
+        "given": "Neda",
+        "family": "Gharani"
+      },
+      {
+        "given": "Richard A.",
+        "family": "Gibbs"
+      },
+      {
+        "given": "Christopher R.",
+        "family": "Gignoux"
+      },
+      {
+        "given": "Simon",
+        "family": "Gravel"
+      },
+      {
+        "given": "Brenna",
+        "family": "Henn"
+      },
+      {
+        "given": "Danielle",
+        "family": "Jones"
+      },
+      {
+        "given": "Lynn",
+        "family": "Jorde"
+      },
+      {
+        "given": "Jane S.",
+        "family": "Kaye"
+      },
+      {
+        "given": "Alon",
+        "family": "Keinan"
+      },
+      {
+        "given": "Alastair",
+        "family": "Kent"
+      },
+      {
+        "given": "Angeliki",
+        "family": "Kerasidou"
+      },
+      {
+        "given": "Yingrui",
+        "family": "Li"
+      },
+      {
+        "given": "Rasika",
+        "family": "Mathias"
+      },
+      {
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "given": "Andres",
+        "family": "Moreno-Estrada"
+      },
+      {
+        "given": "Pilar N.",
+        "family": "Ossorio"
+      },
+      {
+        "given": "Michael",
+        "family": "Parker"
+      },
+      {
+        "given": "Alissa M.",
+        "family": "Resch"
+      },
+      {
+        "given": "Charles N.",
+        "family": "Rotimi"
+      },
+      {
+        "given": "Charmaine D.",
+        "family": "Royal"
+      },
+      {
+        "given": "Karla",
+        "family": "Sandoval"
+      },
+      {
+        "given": "Yeyang",
+        "family": "Su"
+      },
+      {
+        "given": "Ralf",
+        "family": "Sudbrak"
+      },
+      {
+        "given": "Zhongming",
+        "family": "Tian"
+      },
+      {
+        "given": "Sarah",
+        "family": "Tishkoff"
+      },
+      {
+        "given": "Lorraine H.",
+        "family": "Toji"
+      },
+      {
+        "given": "Chris",
+        "family": "Tyler-Smith"
+      },
+      {
+        "given": "Marc",
+        "family": "Via"
+      },
+      {
+        "given": "Yuhong",
+        "family": "Wang"
+      },
+      {
+        "given": "Huanming",
+        "family": "Yang"
+      },
+      {
+        "given": "Ling",
+        "family": "Yang"
+      },
+      {
+        "given": "Jiayong",
+        "family": "Zhu"
+      },
+      {
+        "given": "Walter",
+        "family": "Bodmer"
+      },
+      {
+        "given": "Gabriel",
+        "family": "Bedoya"
+      },
+      {
+        "given": "Andres",
+        "family": "Ruiz-Linares"
+      },
+      {
+        "given": "Zhiming",
+        "family": "Cai"
+      },
+      {
+        "given": "Yang",
+        "family": "Gao"
+      },
+      {
+        "given": "Jiayou",
+        "family": "Chu"
+      },
+      {
+        "given": "Leena",
+        "family": "Peltonen"
+      },
+      {
+        "given": "Andres",
+        "family": "Garcia-Montero"
+      },
+      {
+        "given": "Alberto",
+        "family": "Orfao"
+      },
+      {
+        "given": "Julie",
+        "family": "Dutil"
+      },
+      {
+        "given": "Juan C.",
+        "family": "Martinez-Cruzado"
+      },
+      {
+        "given": "Taras K.",
+        "family": "Oleksyk"
+      },
+      {
+        "given": "Kathleen C.",
+        "family": "Barnes"
+      },
+      {
+        "given": "Rasika A.",
+        "family": "Mathias"
+      },
+      {
+        "given": "Anselm",
+        "family": "Hennis"
+      },
+      {
+        "given": "Harold",
+        "family": "Watson"
+      },
+      {
+        "given": "Colin",
+        "family": "McKenzie"
+      },
+      {
+        "given": "Firdausi",
+        "family": "Qadri"
+      },
+      {
+        "given": "Regina",
+        "family": "LaRocque"
+      },
+      {
+        "given": "Pardis C.",
+        "family": "Sabeti"
+      },
+      {
+        "given": "Jiayong",
+        "family": "Zhu"
+      },
+      {
+        "given": "Xiaoyan",
+        "family": "Deng"
+      },
+      {
+        "given": "Pardis C.",
+        "family": "Sabeti"
+      },
+      {
+        "given": "Danny",
+        "family": "Asogun"
+      },
+      {
+        "given": "Onikepe",
+        "family": "Folarin"
+      },
+      {
+        "given": "Christian",
+        "family": "Happi"
+      },
+      {
+        "given": "Omonwunmi",
+        "family": "Omoniwa"
+      },
+      {
+        "given": "Matt",
+        "family": "Stremlau"
+      },
+      {
+        "given": "Ridhi",
+        "family": "Tariyal"
+      },
+      {
+        "given": "Muminatou",
+        "family": "Jallow"
+      },
+      {
+        "given": "Fatoumatta",
+        "family": "Sisay Joof"
+      },
+      {
+        "given": "Tumani",
+        "family": "Corrah"
+      },
+      {
+        "given": "Kirk",
+        "family": "Rockett"
+      },
+      {
+        "given": "Dominic",
+        "family": "Kwiatkowski"
+      },
+      {
+        "given": "Jaspal",
+        "family": "Kooner"
+      },
+      {
+        "given": "Trâ`n",
+        "family": "Tịnh Hiê`n"
+      },
+      {
+        "given": "Sarah J.",
+        "family": "Dunstan"
+      },
+      {
+        "given": "Nguyen",
+        "family": "Thuy Hang"
+      },
+      {
+        "given": "Richard",
+        "family": "Fonnie"
+      },
+      {
+        "given": "Robert",
+        "family": "Garry"
+      },
+      {
+        "given": "Lansana",
+        "family": "Kanneh"
+      },
+      {
+        "given": "Lina",
+        "family": "Moses"
+      },
+      {
+        "given": "Pardis C.",
+        "family": "Sabeti"
+      },
+      {
+        "given": "John",
+        "family": "Schieffelin"
+      },
+      {
+        "given": "Donald S.",
+        "family": "Grant"
+      },
+      {
+        "given": "Carla",
+        "family": "Gallo"
+      },
+      {
+        "given": "Giovanni",
+        "family": "Poletti"
+      },
+      {
+        "given": "Danish",
+        "family": "Saleheen"
+      },
+      {
+        "given": "Asif",
+        "family": "Rasheed"
+      },
+      {
+        "given": "Lisa D.",
+        "family": "Brooks"
+      },
+      {
+        "given": "Adam L.",
+        "family": "Felsenfeld"
+      },
+      {
+        "given": "Jean E.",
+        "family": "McEwen"
+      },
+      {
+        "given": "Yekaterina",
+        "family": "Vaydylevich"
+      },
+      {
+        "given": "Eric D.",
+        "family": "Green"
+      },
+      {
+        "given": "Audrey",
+        "family": "Duncanson"
+      },
+      {
+        "given": "Michael",
+        "family": "Dunn"
+      },
+      {
+        "given": "Jeffery A.",
+        "family": "Schloss"
+      },
+      {
+        "given": "Jun",
+        "family": "Wang"
+      },
+      {
+        "given": "Huanming",
+        "family": "Yang"
+      },
+      {
+        "given": "Adam",
+        "family": "Auton"
+      },
+      {
+        "given": "Lisa D.",
+        "family": "Brooks"
+      },
+      {
+        "given": "Richard M.",
+        "family": "Durbin"
+      },
+      {
+        "given": "Erik P.",
+        "family": "Garrison"
+      },
+      {
+        "given": "Hyun",
+        "family": "Min Kang"
+      },
+      {
+        "given": "Jan O.",
+        "family": "Korbel"
+      },
+      {
+        "given": "Jonathan L.",
+        "family": "Marchini"
+      },
+      {
+        "given": "Shane",
+        "family": "McCarthy"
+      },
+      {
+        "given": "Gil A.",
+        "family": "McVean"
+      },
+      {
+        "given": "Gonçalo R.",
+        "family": "Abecasis"
+      },
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {},
+      {}
     ],
-    "container-title": "eLife",
+    "container-title": "Nature",
     "language": "en",
     "issued": {
       "date-parts": [
         [
-          2018,
-          3,
-          1
+          2015,
+          9,
+          30
         ]
       ]
     },
-    "URL": "https://doi.org/ckcj",
-    "PMCID": "PMC5832410",
-    "PMID": "29424689",
-    "id": "IhliSZDo",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.32822"
+    "URL": "https://doi.org/73d",
+    "container-title-short": "Nature",
+    "PMCID": "PMC4750478",
+    "PMID": "26432245",
+    "id": "11PJIeJyi",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/nature15393"
   },
   {
-    "id": "zBPP9YKu",
-    "type": "book",
-    "call-number": "Z286.O63 S83 2012",
-    "collection-title": "MIT Press essential knowledge series",
-    "event-place": "Cambridge, Mass",
-    "ISBN": "9780262517638",
-    "note": "OCLC: ocn754518563\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: isbn:9780262517638",
-    "number-of-pages": "242",
-    "publisher": "MIT Press",
-    "publisher-place": "Cambridge, Mass",
-    "source": "Library of Congress ISBN",
-    "title": "Open access",
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "11",
+    "DOI": "10.1038/ng.3964",
+    "type": "article-journal",
+    "page": "1654-1660",
+    "source": "Crossref",
+    "title": "Graphtyper enables population-scale genotyping using pangenome graphs",
+    "volume": "49",
     "author": [
       {
-        "family": "Suber",
-        "given": "Peter"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          "2012"
-        ]
-      ]
-    }
-  },
-  {
-    "source": "PubMed",
-    "accessed": {
-      "date-parts": [
-        [
-          2023,
-          1,
-          24
-        ]
-      ]
-    },
-    "id": "mSMVRkoc",
-    "title": "Reproducibility of computational workflows is automated using continuous analysis",
-    "author": [
-      {
-        "family": "Beaulieu-Jones",
-        "given": "Brett K"
+        "given": "Hannes P",
+        "family": "Eggertsson"
       },
       {
-        "family": "Greene",
-        "given": "Casey S"
+        "given": "Hakon",
+        "family": "Jonsson"
+      },
+      {
+        "given": "Snaedis",
+        "family": "Kristmundsdottir"
+      },
+      {
+        "given": "Eirikur",
+        "family": "Hjartarson"
+      },
+      {
+        "given": "Birte",
+        "family": "Kehr"
+      },
+      {
+        "given": "Gisli",
+        "family": "Masson"
+      },
+      {
+        "given": "Florian",
+        "family": "Zink"
+      },
+      {
+        "given": "Kristjan E",
+        "family": "Hjorleifsson"
+      },
+      {
+        "given": "Aslaug",
+        "family": "Jonasdottir"
+      },
+      {
+        "given": "Adalbjorg",
+        "family": "Jonasdottir"
+      },
+      {
+        "given": "Ingileif",
+        "family": "Jonsdottir"
+      },
+      {
+        "given": "Daniel F",
+        "family": "Gudbjartsson"
+      },
+      {
+        "given": "Pall",
+        "family": "Melsted"
+      },
+      {
+        "given": "Kari",
+        "family": "Stefansson"
+      },
+      {
+        "given": "Bjarni V",
+        "family": "Halldorsson"
       }
     ],
-    "container-title-short": "Nat Biotechnol",
-    "container-title": "Nature biotechnology",
-    "publisher-place": "United States",
-    "ISSN": "1087-0156",
+    "container-title": "Nature Genetics",
+    "language": "en",
     "issued": {
       "date-parts": [
         [
           2017,
-          4
-        ]
-      ]
-    },
-    "page": "342-346",
-    "volume": "35",
-    "issue": "4",
-    "PMID": "28288103",
-    "PMCID": "PMC6103790",
-    "DOI": "10.1038/nbt.3780",
-    "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: pmc:PMC6103790"
-  },
-  {
-    "title": "Bitcoin for the biological literature.",
-    "volume": "566",
-    "issue": "7742",
-    "page": "141-142",
-    "container-title": "Nature",
-    "container-title-short": "Nature",
-    "ISSN": "1476-4687",
-    "issued": {
-      "date-parts": [
-        [
-          2019,
-          2
-        ]
-      ]
-    },
-    "author": [
-      {
-        "given": "Douglas",
-        "family": "Heaven"
-      }
-    ],
-    "PMID": "30718888",
-    "DOI": "10.1038/d41586-019-00447-9",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/30718888",
-    "type": "article-journal",
-    "id": "126Wi5Us4",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: pubmed:30718888"
-  },
-  {
-    "id": "1GGGHdsew",
-    "type": "report",
-    "language": "en-US",
-    "publisher": "Manubot",
-    "source": "greenelab.github.io",
-    "title": "Open collaborative writing with Manubot",
-    "URL": "https://greenelab.github.io/meta-review/",
-    "author": [
-      {
-        "family": "Himmelstein",
-        "given": "Daniel S."
-      },
-      {
-        "family": "Rubinetti",
-        "given": "Vincent"
-      },
-      {
-        "family": "Slochower",
-        "given": "David R."
-      },
-      {
-        "family": "Hu",
-        "given": "Dongbo"
-      },
-      {
-        "family": "Malladi",
-        "given": "Venkat S."
-      },
-      {
-        "family": "Greene",
-        "given": "Casey S."
-      },
-      {
-        "family": "Gitter",
-        "given": "Anthony"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2023",
-          1,
-          24
-        ]
-      ]
-    },
-    "issued": {
-      "date-parts": [
-        [
-          "2020",
-          5,
+          9,
           25
         ]
       ]
     },
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: url:https://greenelab.github.io/meta-review/"
+    "URL": "https://doi.org/gbx7v6",
+    "container-title-short": "Nat Genet",
+    "PMID": "28945251",
+    "id": "ohTIiqfV",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/ng.3964"
   },
   {
-    "id": "QhC8yJ7V",
-    "type": "article",
-    "note": "QID: Q56458321\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: wikidata:Q56458321",
-    "source": "Wikidata",
-    "title": "Plan S: Accelerating the transition to full and immediate Open Access to scientific publications",
-    "title-short": "Plan S",
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7825",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Array programming provides a powerful, compact and expressive syntax for accessing, manipulating and operating on data in vectors, matrices and higher-dimensional arrays. NumPy is the primary array programming library for the Python language. It has an essential role in research analysis pipelines in fields as diverse as physics, chemistry, astronomy, geoscience, biology, psychology, materials science, engineering, finance and economics. For example, in astronomy, NumPy was an important part of the software stack used in the discovery of gravitational waves<jats:sup>1</jats:sup>and in the first imaging of a black hole<jats:sup>2</jats:sup>. Here we review how a few fundamental array concepts lead to a simple and powerful programming paradigm for organizing, exploring and analysing scientific data. NumPy is the foundation upon which the scientific Python ecosystem is constructed. It is so pervasive that several projects, targeting audiences with specialized needs, have developed their own NumPy-like interfaces and array objects. Owing to its central position in the ecosystem, NumPy increasingly acts as an interoperability layer between such array computation libraries and, together with its application programming interface (API), provides a flexible framework to support the next decade of scientific and industrial analysis.</jats:p>",
+    "DOI": "10.1038/s41586-020-2649-2",
+    "type": "article-journal",
+    "page": "357-362",
+    "source": "Crossref",
+    "title": "Array programming with NumPy",
+    "volume": "585",
     "author": [
       {
-        "family": "S",
-        "given": "cOAlition"
+        "given": "Charles R.",
+        "family": "Harris"
+      },
+      {
+        "given": "K. Jarrod",
+        "family": "Millman"
+      },
+      {
+        "given": "Stéfan J.",
+        "family": "van der Walt"
+      },
+      {
+        "given": "Ralf",
+        "family": "Gommers"
+      },
+      {
+        "given": "Pauli",
+        "family": "Virtanen"
+      },
+      {
+        "given": "David",
+        "family": "Cournapeau"
+      },
+      {
+        "given": "Eric",
+        "family": "Wieser"
+      },
+      {
+        "given": "Julian",
+        "family": "Taylor"
+      },
+      {
+        "given": "Sebastian",
+        "family": "Berg"
+      },
+      {
+        "given": "Nathaniel J.",
+        "family": "Smith"
+      },
+      {
+        "given": "Robert",
+        "family": "Kern"
+      },
+      {
+        "given": "Matti",
+        "family": "Picus"
+      },
+      {
+        "given": "Stephan",
+        "family": "Hoyer"
+      },
+      {
+        "given": "Marten H.",
+        "family": "van Kerkwijk"
+      },
+      {
+        "given": "Matthew",
+        "family": "Brett"
+      },
+      {
+        "given": "Allan",
+        "family": "Haldane"
+      },
+      {
+        "given": "Jaime Fernández",
+        "family": "del Río"
+      },
+      {
+        "given": "Mark",
+        "family": "Wiebe"
+      },
+      {
+        "given": "Pearu",
+        "family": "Peterson"
+      },
+      {
+        "given": "Pierre",
+        "family": "Gérard-Marchant"
+      },
+      {
+        "given": "Kevin",
+        "family": "Sheppard"
+      },
+      {
+        "given": "Tyler",
+        "family": "Reddy"
+      },
+      {
+        "given": "Warren",
+        "family": "Weckesser"
+      },
+      {
+        "given": "Hameer",
+        "family": "Abbasi"
+      },
+      {
+        "given": "Christoph",
+        "family": "Gohlke"
+      },
+      {
+        "given": "Travis E.",
+        "family": "Oliphant"
+      }
+    ],
+    "container-title": "Nature",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          16
+        ]
+      ]
+    },
+    "URL": "https://doi.org/ghbzf2",
+    "container-title-short": "Nature",
+    "PMCID": "PMC7759461",
+    "PMID": "32939066",
+    "id": "1LexfAxj",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/s41586-020-2649-2"
+  },
+  {
+    "publisher": "Cold Spring Harbor Laboratory",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Python is a popular and widespread programming language for scientific computing, in large part due to the powerful<jats:italic>array programming</jats:italic>library NumPy, which makes it easy to write clean, vectorized and efficient code for handling large datasets. A challenge with using array programming for biological data is that the data is often non-numeric and variable-length (such as DNA sequences), inhibiting out-of-the-box use of standard array programming techniques. Thus, a tradition in bioinformatics has been to use low-level languages like C and C++ to write efficient code. This makes the tools less transparent to the average computational biologist - making them harder to understand, modify and contribute to.</jats:p><jats:p>We here present a new Python package BioNumPy, which adds a layer on top of NumPy in order to enable intuitive array programming on biological datasets. BioNumPy is able to efficiently load biological datasets (e.g. FASTQ-files, BED-files and BAM-files) into NumPy-like data structures, so that NumPy operations like indexing, vectorized functions and reductions can be applied to the data. We show that BioNumPy is considerably faster than vanilla Python and other Python packages for common bioinformatics tasks, and in many cases as fast as tools written in C/C++. BioNumPy thus bridges a long-lasting gap in bioinformatics, allowing the same programming language (Python) to be used across the full spectrum from quick and simple scripts to computationally efficient processing of large-scale data.</jats:p>",
+    "DOI": "10.1101/2022.12.21.521373",
+    "type": "manuscript",
+    "source": "Crossref",
+    "title": "BioNumPy: Fast and easy analysis of biological data with Python",
+    "author": [
+      {
+        "given": "Knut",
+        "family": "Rand"
+      },
+      {
+        "given": "Ivar",
+        "family": "Grytten"
+      },
+      {
+        "given": "Milena",
+        "family": "Pavlovic"
+      },
+      {
+        "given": "Chakravarthi",
+        "family": "Kanduri"
+      },
+      {
+        "given": "Geir Kjetil",
+        "family": "Sandve"
       }
     ],
     "issued": {
       "date-parts": [
         [
-          "2018",
-          9,
+          2022,
+          12,
+          22
+        ]
+      ]
+    },
+    "URL": "https://doi.org/grp3k6",
+    "id": "i8VR6l5D",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1101/2022.12.21.521373"
+  },
+  {
+    "publisher": "IEEE",
+    "DOI": "10.1109/asap.2018.8445084",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "GPU Acceleration of Advanced k-mer Counting for Computational Genomics",
+    "author": [
+      {
+        "given": "Huiren",
+        "family": "Li"
+      },
+      {
+        "given": "Anand",
+        "family": "Ramachandran"
+      },
+      {
+        "given": "Deming",
+        "family": "Chen"
+      }
+    ],
+    "event": "2018 IEEE 29th International Conference on Application-specific Systems, Architectures and Processors (ASAP)",
+    "container-title": "2018 IEEE 29th International Conference on Application-specific Systems, Architectures and Processors (ASAP)",
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          7
+        ]
+      ]
+    },
+    "URL": "https://doi.org/grp3kq",
+    "id": "1H2xJw7YP",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1109/asap.2018.8445084"
+  },
+  {
+    "publisher": "ACM",
+    "DOI": "10.1145/2833157.2833162",
+    "type": "paper-conference",
+    "source": "Crossref",
+    "title": "Numba",
+    "author": [
+      {
+        "given": "Siu Kwan",
+        "family": "Lam"
+      },
+      {
+        "given": "Antoine",
+        "family": "Pitrou"
+      },
+      {
+        "given": "Stanley",
+        "family": "Seibert"
+      }
+    ],
+    "event": "SC15: The International Conference for High Performance Computing, Networking, Storage and Analysis",
+    "container-title": "Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          15
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gf3nks",
+    "id": "189xgFrlN",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1145/2833157.2833162"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "DOI": "10.1186/s13015-017-0097-9",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "Gerbil: a fast and memory-efficient k-mer counter with GPU-support",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Marius",
+        "family": "Erbert"
+      },
+      {
+        "given": "Steffen",
+        "family": "Rechner"
+      },
+      {
+        "given": "Matthias",
+        "family": "Müller-Hannemann"
+      }
+    ],
+    "container-title": "Algorithms for Molecular Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          31
+        ]
+      ]
+    },
+    "URL": "https://doi.org/gkzhfr",
+    "container-title-short": "Algorithms Mol Biol",
+    "PMCID": "PMC5374613",
+    "PMID": "28373894",
+    "id": "Kt8SdjWo",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s13015-017-0097-9"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>Genotyping is a core application of high-throughput sequencing. We present KAGE, a genotyper for SNPs and short indels that is inspired by recent developments within graph-based genome representations and alignment-free methods. KAGE uses a pan-genome representation of the population to efficiently and accurately predict genotypes. Two novel ideas improve both the speed and accuracy: a Bayesian model incorporates genotypes from thousands of individuals to improve prediction accuracy, and a computationally efficient method leverages correlation between variants. We show that the accuracy of KAGE is at par with the best existing alignment-free genotypers, while being an order of magnitude faster.</jats:p>",
+    "DOI": "10.1186/s13059-022-02771-2",
+    "type": "article-journal",
+    "source": "Crossref",
+    "title": "KAGE: fast alignment-free graph-based genotyping of SNPs and short indels",
+    "volume": "23",
+    "author": [
+      {
+        "given": "Ivar",
+        "family": "Grytten"
+      },
+      {
+        "given": "Knut",
+        "family": "Dagestad Rand"
+      },
+      {
+        "given": "Geir Kjetil",
+        "family": "Sandve"
+      }
+    ],
+    "container-title": "Genome Biology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          10,
           4
         ]
       ]
     },
-    "URL": "https://www.wikidata.org/wiki/Q56458321"
+    "URL": "https://doi.org/grpzvf",
+    "container-title-short": "Genome Biol",
+    "PMCID": "PMC9531401",
+    "PMID": "36195962",
+    "id": "kWWwizJT",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1186/s13059-022-02771-2"
   }
 ]
