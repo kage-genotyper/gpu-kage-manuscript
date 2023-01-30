@@ -5,10 +5,10 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Jørgen Wictor Henriksen" />
-  <meta name="author" content="Ivar Grytten" />
   <meta name="author" content="Knut Dagestad Rand" />
   <meta name="author" content="Geir Kjetil Sandve" />
-  <meta name="dcterms.date" content="2023-01-29" />
+  <meta name="author" content="Ivar Grytten" />
+  <meta name="dcterms.date" content="2023-01-30" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Ultra-fast genotyping of SNPs and short indels using GPU-acceleration</title>
   <style>
@@ -53,11 +53,11 @@
   <meta name="citation_title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
   <meta property="og:title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
   <meta property="twitter:title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
-  <meta name="dc.date" content="2023-01-29" />
-  <meta name="citation_publication_date" content="2023-01-29" />
-  <meta property="article:published_time" content="2023-01-29" />
-  <meta name="dc.modified" content="2023-01-29T21:47:21+00:00" />
-  <meta property="article:modified_time" content="2023-01-29T21:47:21+00:00" />
+  <meta name="dc.date" content="2023-01-30" />
+  <meta name="citation_publication_date" content="2023-01-30" />
+  <meta property="article:published_time" content="2023-01-30" />
+  <meta name="dc.modified" content="2023-01-30T14:39:52+00:00" />
+  <meta property="article:modified_time" content="2023-01-30T14:39:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -66,8 +66,6 @@
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Jørgen Wictor Henriksen" />
   <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
-  <meta name="citation_author" content="Ivar Grytten" />
-  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
   <meta name="citation_author" content="Knut Dagestad Rand" />
   <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
   <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
@@ -75,15 +73,17 @@
   <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
   <meta name="citation_author_institution" content="Centre for Bioinformatics, University of Oslo, Oslo, Norway" />
   <meta name="citation_author_institution" content="UiORealArt Convergence Environment, University of Oslo, Oslo, Norway" />
+  <meta name="citation_author" content="Ivar Grytten" />
+  <meta name="citation_author_institution" content="Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway" />
   <link rel="canonical" href="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta property="og:url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta property="twitter:url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_pdf_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/" />
-  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/253eccef06a2d0accace69df4fe20207c9e86a7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/" />
+  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -105,43 +105,41 @@
 <small>
 Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
 </small></p></li>
-<li><p><strong>Ivar Grytten</strong>
-<br>
-<small>
-Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
-</small></p></li>
 <li><p><strong>Knut Dagestad Rand</strong>
 <br>
 <small>
 Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway; Centre for Bioinformatics, University of Oslo, Oslo, Norway
 </small></p></li>
 <li><p><strong>Geir Kjetil Sandve</strong>
-<sup><a href="#correspondence">✉</a></sup><br>
+<br>
 <small>
 Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway; Centre for Bioinformatics, University of Oslo, Oslo, Norway; UiORealArt Convergence Environment, University of Oslo, Oslo, Norway
 </small></p></li>
+<li><p><strong>Ivar Grytten</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<small>
+Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
+</small></p></li>
 </ul>
 <div id="correspondence">
-<p>✉ — Correspondence possible via <a href="https://github.com/kage-genotyper/gpu-kage-manuscript/issues">GitHub Issues</a>
-or email to
-Geir Kjetil Sandve &lt;geirksa@ifi.uio.no&gt;.</p>
+<p>✉ — Correspondence to
+Ivar Grytten &lt;ivargry@ifi.uio.no&gt;.</p>
 </div>
 <h2 id="abstract">Abstract</h2>
-<p>As sequencing costs have steadily decreased in recent years, having efficient methods for variant discovery and genotyping has become increasingly important. Recent methods have shown that genotyping can be done efficiently and accurately using <em>alignment-free</em> methods that are based on analysing kmers from sequenced reads. In recent work, we have presented the KAGE genotyper, which uses an efficient pangenome representation of known individuals in a population to further increase accuracy and efficiency.</p>
-<p>We here present <em>GKAGE</em>, a new and improved version of KAGE that utilises the <em>Graphical Processing Unit</em> (GPU) to further increase the efficiency by counting and analysing large amounts of kmers in parallel. We show that GKAGE is able to genotype an individual up to a magnitude faster than KAGE while producing the same output, which makes it by far the fastest genotyper available today. GKAGE can run on consumer-grade GPUs, and enables genotyping of a human sample in only a matter of minutes without the need for expensive high-performance computers. GKAGE is open source and available at <a href="https://github.com/ivargr/kage" class="uri">https://github.com/ivargr/kage</a>.</p>
+<p>As sequencing costs have steadily decreased in recent years, having computationally efficient methods for variant discovery and genotyping has become increasingly important. Recent work have shown that genotyping can be done efficiently and accurately using <em>alignment-free</em> methods that are based on analysing kmers from sequenced reads. In particular, we have recently presented the KAGE genotyper, which uses an efficient pangenome representation of known individuals in a population to further increase accuracy and efficiency. While existing genotypers like KAGE use the <em>Central Processing Unit</em> (CPU) to count and analyse kmers, the <em>Graphical Processing Unit</em> (GPU) has shown to be promising for reducing runtime for similar problems.</p>
+<p>We here present <em>GKAGE</em>, a new and improved version of KAGE that utilises the GPU to further increase the computational efficiency. This is done by counting and analysing large amounts of kmers in the many parallel cores of a GPU. We show that GKAGE is, on comparable cost hardware, able to genotype an individual up to a magnitude faster than KAGE while producing the same output, which makes it by far the fastest genotyper available today. GKAGE can run on consumer-grade GPUs, and enables genotyping of a human sample in only a matter of minutes without the need for expensive high-performance computers. GKAGE is open source and available at <a href="https://github.com/kage-genotyper/kage" class="uri">https://github.com/kage-genotyper/kage</a>.</p>
 <h2 id="introduction">Introduction</h2>
-<p>The cost of sequencing a full human genome has fallen drastically in recent years, and consumers can now get their whole genome sequenced for a few hundred dollars, a fraction of what was the price only a few years ago. As millions of genomes are likely to be sequenced in the coming years, there is an ever-increasing need for efficient methods for analysing this genomic data. At the core of such analysis is <em>variant detection</em>, determining which genetic variants a sample has based on the sequenced reads.</p>
-<p>Recent methods <span class="citation" data-cites="kWWwizJT MpmJz9S5 ohTIiqfV">[<a href="#ref-kWWwizJT" role="doc-biblioref">1</a>,<a href="#ref-MpmJz9S5" role="doc-biblioref">2</a>,<a href="#ref-ohTIiqfV" role="doc-biblioref">3</a>]</span> have shown that detecting variants in a human sample can be performed efficiently and with high accuracy by <em>genotyping</em> the sample against an existing database of known human variation. Such methods use prior knowledge from e.g. the 1000 Genomes Project <span class="citation" data-cites="11PJIeJyi">[<a href="#ref-11PJIeJyi" role="doc-biblioref">4</a>]</span> about where in the genome individuals may have variation, and for each such genetic variant uses the genomic reads from the sample to infer the most likely genotype for the given sample. While such methods traditionally have been based on aligning reads to a reference genome, which is slow, recent <em>alignment-free methods</em> have shown that drastic speedup can be achieved by instead analysing kmers from the sequenced reads. In a recent publication <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">1</a>]</span> we proposed a highly efficient alignment-free method, KAGE, that used prior knowledge from a population to achieve high genotyping accuracy while being more efficient than other alignment-free genotypers.</p>
-<p>Alignment-free genotypers, like KAGE, generally work by using an index (e.g. a hashmap) that enables “mapping” of kmers from input reads to alleles of known genetic variants. The genotyping is then performed by counting how many reads support the various alleles of the variants of interest. Since all kmers from the input reads are counted independently, this process can easily be parallelized. While existing alignment-free genotypers uses the central processing unit (CPU) for parallel kmers counting, we hypothesise that this can be done much more efficiently by instead using the <em>Graphical Processing Unit (GPU)</em>, which is able to perform massive amounts of computations in parallel. Recent work has also shown that the GPU can greatly improve the efficiency of kmer counting in general <span class="citation" data-cites="Kt8SdjWo">[<a href="#ref-1H2xJw7YP" role="doc-biblioref">6</a>]</span>.</p>
-<p>We here present GKAGE, a GPU-accelerated version of KAGE, which to our knowledge is the first genotyper to utilise the GPU. GKAGE uses the GPU to process genomic reads, extract kmers and count how many kmers support alleles of genetic variants. We show that GKAGE gives significant speedup (up to 8X) over the original KAGE genotyper while producing the exact same output. GKAGE has been implemented so that it is able to run even on standard consumer GPUs, and is able to genotype a whole human sample in a matter of minutes.</p>
+<p>The cost of sequencing a full human genome has fallen drastically in recent years, and consumers can now get their whole genome sequenced for a few hundred dollars <span class="citation" data-cites="M3mPvfo4">[<a href="#ref-M3mPvfo4" role="doc-biblioref">1</a>]</span>, a fraction of what was the price only a few years ago. As millions of genomes are likely to be sequenced in the coming years, there is an ever-increasing need for efficient methods for analysing this genomic data. At the core of such analysis is <em>variant detection</em>, determining which genetic variants are present in a sample based on the sequenced reads.</p>
+<p>Recent methods <span class="citation" data-cites="kWWwizJT MpmJz9S5 xTxiitR ohTIiqfV">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>,<a href="#ref-MpmJz9S5" role="doc-biblioref">3</a>,<a href="#ref-xTxiitR" role="doc-biblioref">4</a>,<a href="#ref-ohTIiqfV" role="doc-biblioref">5</a>]</span> have shown that detecting variants in a human sample can be performed efficiently and with high accuracy by <em>genotyping</em> the sample against an existing database of known human variation. Such methods use prior knowledge from e.g. the 1000 Genomes Project <span class="citation" data-cites="11PJIeJyi">[<a href="#ref-11PJIeJyi" role="doc-biblioref">6</a>]</span> about where in the genome individuals frequently have variation, and for each such genetic variant uses the genomic reads from the sample to infer the most likely genotype. While such methods traditionally have been based on aligning reads to a reference genome, which is slow, recent <em>alignment-free methods</em> have shown that drastic speedup can be achieved by instead analysing kmers from the sequenced reads. In a recent publication <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>]</span>, we proposed a highly efficient alignment-free method, KAGE, that uses prior knowledge from a population to achieve high genotyping accuracy while being more efficient than other alignment-free genotypers. Alignment-free genotypers, like KAGE, generally work by using an index (e.g. a hashmap) that enables “mapping” of kmers from input reads to alleles of known genetic variants. The genotyping is then performed by counting how many reads support the various alleles of the variants of interest.</p>
+<p>In contrast to other genotypers, especially alignment-based genotypers like GATK <span class="citation" data-cites="15Mgg4tfC">[<a href="#ref-15Mgg4tfC" role="doc-biblioref">7</a>]</span>, the time-consuming steps of KAGE (like processing and counting kmers) can benefit from the massive parallelization that the Graphical Processing Unit (GPU) offer <span class="citation" data-cites="Kt8SdjWo">[<a href="#ref-1H2xJw7YP" role="doc-biblioref">9</a>]</span>. Here, we show that by applying GPU-acceleration to the compute-heavy parts of KAGE, we end up with a very efficient genotyper, GKAGE. GKAGE uses the GPU to process genomic reads, extract kmers and count how many kmers support alleles of genetic variants. We show that GKAGE gives significant speedup (up to 10X) over the original KAGE genotyper (which was already faster than any other genotyper), while producing the exact same output. GKAGE has been implemented so that it is able to run even on standard consumer GPUs, and is able to genotype a whole human sample in a matter of minutes.</p>
 <h2 id="results">Results</h2>
-<p>GKAGE is a GPU-accelerated version of the recently published KAGE genotyper. GKAGE uses CUDA-powered GPUs to efficiently parse and encode kmers from reads and genotype a set of known SNPs and indels based on the kmer counts. GKAGE produces identical output as KAGE with reduced runtime on systems that enable GPU-acceleration and support the CUDA-interface. The software is open source and available at <a href="https://github.com/ivargr/kage" class="uri">https://github.com/ivargr/kage</a>. As part of GKAGE, we have also implemented a static GPU hashmap for counting kmers through a Python interface, available at <a href="https://github.com/jorgenwh/cucounter" class="uri">https://github.com/jorgenwh/cucounter</a>.</p>
-<p>We have recently shown that KAGE is an order of magnitude faster than existing genotypers while giving better or comparable accuracy <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">1</a>]</span>. We thus only benchmark GKAGE against KAGE to show the effect of GPU-acceleration. We do this by running GKAGE and KAGE on a human whole genome sample (15x coverage) on two different systems:</p>
+<p>GKAGE is a GPU-accelerated version of the recently published KAGE genotyper. GKAGE uses CUDA-powered GPUs to efficiently parse and encode kmers from reads, and genotype a set of known SNPs and indels based on the kmer counts. GKAGE produces output that is identical to that of KAGE, with reduced runtime on systems that support the CUDA-interface for GPU acceleration. The software is open source and available at <a href="https://github.com/kage-genotyper/kage" class="uri">https://github.com/kage-genotyper/kage</a>. As part of GKAGE, we have also implemented a static GPU hashmap for counting kmers through a Python interface, available at <a href="https://github.com/kage-genotyper/cucounter" class="uri">https://github.com/kage-genotyper/cucounter</a>.</p>
+<p>We have recently shown that KAGE is an order of magnitude faster than existing genotypers while giving better or comparable accuracy <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>]</span>. We thus only benchmark GKAGE against KAGE to show the effect of GPU-acceleration. We do this by running GKAGE and KAGE on a human whole genome sample (15x coverage) on two different systems:</p>
 <ol type="1">
-<li><p>A high-end server with an AMD EPYC 7742 64-Core CPU and two NVIDIA Tesla V100 GPUs. KAGE was run using 16 cores and GKAGE was run using one GPU.</p></li>
-<li><p>A regular desktop computer with an 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz CPU and a NVIDIA GTX 1660 super GPU. KAGE was run using 6 cores.</p></li>
+<li><p>A high-performance server with an AMD EPYC 7742 64-Core CPU and two NVIDIA Tesla V100 GPUs. KAGE was run using 16 threads and GKAGE was run using one GPU.</p></li>
+<li><p>A regular desktop computer with an 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz CPU with 6 cores and a NVIDIA GTX 1660 super GPU. KAGE was run using 6 threads.</p></li>
 </ol>
-<p>Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and 8x faster on the desktop computer.</p>
+<p>Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and ?x faster on the desktop computer.</p>
 <div id="tbl:table1" class="tablenos">
 <table id="tbl:table1">
 <caption><span>Table 1:</span> Running times of KAGE and GKAGE
@@ -157,60 +155,68 @@ Geir Kjetil Sandve &lt;geirksa@ifi.uio.no&gt;.</p>
 <tr class="odd">
 <td>Desktop computer</td>
 <td>1880 sec</td>
-<td>180 sec</td>
+<td>140 sec</td>
 </tr>
 <tr class="even">
 <td>High-performance computer</td>
 <td>510 sec</td>
-<td>108 sec</td>
+<td>93 sec</td>
 </tr>
 </tbody>
 </table>
 </div>
 <h2 id="methods">Methods</h2>
 <h3 id="implementation">Implementation</h3>
-<p>Here we describe more in detail how GKAGE has been implemented. While GKAGE is implemented as part of KAGE, and in large parts uses the same code, compute-heavy parts have been reimplemented so that the GPU is utilised. GKAGE mainly implements GPU support for two bottleneck components of KAGE that were suitable for GPU-acceleration:</p>
-<p><strong>Reading and encoding kmers</strong> from a FASTA/FASTQ file is achieved in KAGE by using BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">7</a>]</span>, a Python library built on top of NumPy <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">8</a>]</span>. BioNumPy uses NumPy to efficiently read chunks of DNA reads from fasta files, encode the bases to a 2-bit representation, and then encode the valid kmers as 64-bit integer representations in an array. GPU support for this step was achieved by utilising CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">9</a>]</span>, a GPU accelerated alternative to NumPy, as a drop-in replacement for NumPy.</p>
+<p>Here we describe more in detail how GKAGE has been implemented. While GKAGE is implemented as part of KAGE, and in large parts uses the same code, compute-heavy parts have been reimplemented so that the GPU is utilised. GKAGE implements GPU support for two bottleneck components of KAGE that were suitable for GPU-acceleration:</p>
+<p><strong>Reading and encoding kmers</strong> from a FASTA/FASTQ file is achieved in KAGE by using BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">10</a>]</span>, a Python library built on top of NumPy <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">11</a>]</span>. BioNumPy uses NumPy to efficiently read chunks of DNA reads from fasta files, encode the bases to a 2-bit representation, and then encode the valid kmers as 64-bit integer representations in an array. GPU support for this step was achieved by utilising CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">12</a>]</span>, a GPU accelerated alternative to NumPy, as a drop-in replacement for NumPy (with a few modifications).</p>
 <p><strong>Counting kmers</strong>
-As part of GKAGE, we have implemented a static hashmap for counting a predefined set of kmers on the GPU. The implementation supports parallel and high-throughput hashing and counting of large chunks of kmers simultaneously on the GPU.</p>
-<p>Genotyping based on kmer counts is performed using the existing KAGE algorithm, which is already very fast and did not benefit from GPU-acceleration.</p>
+As part of GKAGE, we have implemented a static hashmap for counting a predefined set of kmers on the GPU. The implementation supports parallel and high-throughput hashing and counting of large chunks of kmers simultaneously on the GPU. Since KAGE only needs to count kmers that are preselected to represent alleles of known variants, which typically is only a small subset of the kmers present in genomic reads, the hashmap needed for this requires only a few gigabytes of memory. Thus, when genotyping a human sample, a GPU with 4 GB of memory is sufficient.</p>
 <h3 id="benchmarks">Benchmarks</h3>
-<p>A Snakemake pipeline for reproducing the benchmarking results can be found at https://….</p>
+<p>Benchmarking was performed on two different computer systems, as described in the Results section, using simulated reads for a whole genome sample with 15x coverage. A Snakemake pipeline for reproducing the benchmarking results can be found at <a href="https://github.com/kage-genotyper/GKAGE-benchmarking" class="uri">https://github.com/kage-genotyper/GKAGE-benchmarking</a>.</p>
 <h2 id="discussion">Discussion</h2>
-<p>We have presented a GPU-accelerated genotyper by enabling GPU-support for the most compute-intensive operations of the existing KAGE genotyper. Our results show that alignment-free genotyping is an ideal problem for GPU-acceleration. While the existing KAGE genotyper already is fast by today’s standards, GKAGE is considerably faster, and makes it even easier to run whole-genome genotyping on a typical consumer computer. We believe the results are relevant as whole-genome sequencing is continuously becoming cheaper and more common.</p>
-<p>Since the original KAGE genotyper was implemented mainly using the array programming libraries NumPy and BioNumPy in Python, adding GPU-support to the existing code base was possible to do in a clean way by using the CuPy library as well as implementing some custom CUDA kernels with Python wrappers. We thus believe that this work shows that adding GPU-support to existing tools is feasible and can be beneficial in cases where many independent operations are performed on an array of data. As GPUs are becoming cheaper and more available, we thus believe there might be a huge potential in improving the performance of existing tools and methods, which in many cases can be done quite easily through the Python ecosystem with packages such as CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">9</a>]</span>, Numba <span class="citation" data-cites="189xgFrlN">[<a href="#ref-189xgFrlN" role="doc-biblioref">10</a>]</span> and BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">7</a>]</span>.</p>
+<p>We have presented GKAGE, a GPU-accelerated genotyper. Our results show that alignment-free genotyping is an ideal problem for GPU-acceleration. While the existing KAGE genotyper is already fast by today’s standards, GKAGE is considerably faster, and enables rapid genotyping on even consumer computers. We believe these results are relevant as the experimental side of whole-genome sequencing is continuously becoming cheaper and more common.</p>
+<p>Since the original KAGE genotyper was implemented mainly using the array programming libraries NumPy and BioNumPy in Python, adding GPU-support to the existing code base was possible to do in a clean way by using the CuPy library as well as implementing some custom CUDA kernels with Python wrappers. We thus believe that this work shows that adding GPU-support to existing tools is feasible and can be beneficial in cases where many independent operations are performed on an array of data, which is common for computational biology problems. As GPUs are steadily becoming cheaper and more available, we thus believe there might be a huge potential in improving the performance of existing tools and methods, which in many cases can be done quite easily through the Python ecosystem with packages such as CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">12</a>]</span>, Numba <span class="citation" data-cites="189xgFrlN">[<a href="#ref-189xgFrlN" role="doc-biblioref">13</a>]</span> and BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">10</a>]</span>.</p>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-M3mPvfo4" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>A New Wave of Genomics for All</strong> <div class="csl-block">Diana Crow</div> <em>Cell</em> (2019-03) <a href="https://doi.org/gfw9g5">https://doi.org/gfw9g5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.cell.2019.02.041">10.1016/j.cell.2019.02.041</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30901548">30901548</a></div></div>
+</div>
 <div id="ref-kWWwizJT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>KAGE: fast alignment-free graph-based genotyping of SNPs and short indels</strong> <div class="csl-block">Ivar Grytten, Knut Dagestad Rand, Geir Kjetil Sandve</div> <em>Genome Biology</em> (2022-10-04) <a href="https://doi.org/grpzvf">https://doi.org/grpzvf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-022-02771-2">10.1186/s13059-022-02771-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36195962">36195962</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9531401">PMC9531401</a></div></div>
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>KAGE: fast alignment-free graph-based genotyping of SNPs and short indels</strong> <div class="csl-block">Ivar Grytten, Knut Dagestad Rand, Geir Kjetil Sandve</div> <em>Genome Biology</em> (2022-10-04) <a href="https://doi.org/grpzvf">https://doi.org/grpzvf</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13059-022-02771-2">10.1186/s13059-022-02771-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36195962">36195962</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9531401">PMC9531401</a></div></div>
 </div>
 <div id="ref-MpmJz9S5" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>MALVA: Genotyping by Mapping-free ALlele Detection of Known VAriants</strong> <div class="csl-block">Luca Denti, Marco Previtali, Giulia Bernardini, Alexander Schönhuth, Paola Bonizzoni</div> <em>iScience</em> (2019-08) <a href="https://doi.org/gmhw28">https://doi.org/gmhw28</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.isci.2019.07.011">10.1016/j.isci.2019.07.011</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31352182">31352182</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664100">PMC6664100</a></div></div>
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>MALVA: Genotyping by Mapping-free ALlele Detection of Known VAriants</strong> <div class="csl-block">Luca Denti, Marco Previtali, Giulia Bernardini, Alexander Schönhuth, Paola Bonizzoni</div> <em>iScience</em> (2019-08) <a href="https://doi.org/gmhw28">https://doi.org/gmhw28</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.isci.2019.07.011">10.1016/j.isci.2019.07.011</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31352182">31352182</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6664100">PMC6664100</a></div></div>
+</div>
+<div id="ref-xTxiitR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Pangenome-based genome inference allows efficient and accurate genotyping across a wide spectrum of variant classes</strong> <div class="csl-block">Jana Ebler, Peter Ebert, Wayne E Clarke, Tobias Rausch, Peter A Audano, Torsten Houwaart, Yafei Mao, Jan O Korbel, Evan E Eichler, Michael C Zody, … Tobias Marschall</div> <em>Nature Genetics</em> (2022-04) <a href="https://doi.org/grp6v6">https://doi.org/grp6v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41588-022-01043-w">10.1038/s41588-022-01043-w</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35410384">35410384</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9005351">PMC9005351</a></div></div>
 </div>
 <div id="ref-ohTIiqfV" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Graphtyper enables population-scale genotyping using pangenome graphs</strong> <div class="csl-block">Hannes P Eggertsson, Hakon Jonsson, Snaedis Kristmundsdottir, Eirikur Hjartarson, Birte Kehr, Gisli Masson, Florian Zink, Kristjan E Hjorleifsson, Aslaug Jonasdottir, Adalbjorg Jonasdottir, … Bjarni V Halldorsson</div> <em>Nature Genetics</em> (2017-09-25) <a href="https://doi.org/gbx7v6">https://doi.org/gbx7v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.3964">10.1038/ng.3964</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28945251">28945251</a></div></div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Graphtyper enables population-scale genotyping using pangenome graphs</strong> <div class="csl-block">Hannes P Eggertsson, Hakon Jonsson, Snaedis Kristmundsdottir, Eirikur Hjartarson, Birte Kehr, Gisli Masson, Florian Zink, Kristjan E Hjorleifsson, Aslaug Jonasdottir, Adalbjorg Jonasdottir, … Bjarni V Halldorsson</div> <em>Nature Genetics</em> (2017-09-25) <a href="https://doi.org/gbx7v6">https://doi.org/gbx7v6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/ng.3964">10.1038/ng.3964</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28945251">28945251</a></div></div>
 </div>
 <div id="ref-11PJIeJyi" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>A global reference for human genetic variation</strong><div class="csl-block">, Adam Auton, Gonçalo R Abecasis, David M Altshuler (Co-Chair), Richard M Durbin (Co-Chair), Gonçalo R Abecasis, David R Bentley, Aravinda Chakravarti, Andrew G Clark, Peter Donnelly, … </div> <em>Nature</em> (2015-09-30) <a href="https://doi.org/73d">https://doi.org/73d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15393">10.1038/nature15393</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26432245">26432245</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4750478">PMC4750478</a></div></div>
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>A global reference for human genetic variation</strong><div class="csl-block">, Adam Auton, Gonçalo R Abecasis, David M Altshuler (Co-Chair), Richard M Durbin (Co-Chair), Gonçalo R Abecasis, David R Bentley, Aravinda Chakravarti, Andrew G Clark, Peter Donnelly, … </div> <em>Nature</em> (2015-09-30) <a href="https://doi.org/73d">https://doi.org/73d</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature15393">10.1038/nature15393</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26432245">26432245</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4750478">PMC4750478</a></div></div>
+</div>
+<div id="ref-15Mgg4tfC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Scaling accurate genetic variant discovery to tens of thousands of samples</strong> <div class="csl-block">Ryan Poplin, Valentin Ruano-Rubio, Mark A DePristo, Tim J Fennell, Mauricio O Carneiro, Geraldine A Van der Auwera, David E Kling, Laura D Gauthier, Ami Levy-Moonshine, David Roazen, … Eric Banks</div> <em>Cold Spring Harbor Laboratory</em> (2017-11-14) <a href="https://doi.org/ggmrvr">https://doi.org/ggmrvr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/201178">10.1101/201178</a></div></div>
 </div>
 <div id="ref-Kt8SdjWo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Gerbil: a fast and memory-efficient k-mer counter with GPU-support</strong> <div class="csl-block">Marius Erbert, Steffen Rechner, Matthias Müller-Hannemann</div> <em>Algorithms for Molecular Biology</em> (2017-03-31) <a href="https://doi.org/gkzhfr">https://doi.org/gkzhfr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13015-017-0097-9">10.1186/s13015-017-0097-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28373894">28373894</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374613">PMC5374613</a></div></div>
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Gerbil: a fast and memory-efficient k-mer counter with GPU-support</strong> <div class="csl-block">Marius Erbert, Steffen Rechner, Matthias Müller-Hannemann</div> <em>Algorithms for Molecular Biology</em> (2017-03-31) <a href="https://doi.org/gkzhfr">https://doi.org/gkzhfr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s13015-017-0097-9">10.1186/s13015-017-0097-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28373894">28373894</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5374613">PMC5374613</a></div></div>
 </div>
 <div id="ref-1H2xJw7YP" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>GPU Acceleration of Advanced k-mer Counting for Computational Genomics</strong> <div class="csl-block">Huiren Li, Anand Ramachandran, Deming Chen</div> <em>2018 IEEE 29th International Conference on Application-specific Systems, Architectures and Processors (ASAP)</em> (2018-07) <a href="https://doi.org/grp3kq">https://doi.org/grp3kq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/asap.2018.8445084">10.1109/asap.2018.8445084</a></div></div>
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>GPU Acceleration of Advanced k-mer Counting for Computational Genomics</strong> <div class="csl-block">Huiren Li, Anand Ramachandran, Deming Chen</div> <em>2018 IEEE 29th International Conference on Application-specific Systems, Architectures and Processors (ASAP)</em> (2018-07) <a href="https://doi.org/grp3kq">https://doi.org/grp3kq</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1109/asap.2018.8445084">10.1109/asap.2018.8445084</a></div></div>
 </div>
 <div id="ref-i8VR6l5D" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>BioNumPy: Fast and easy analysis of biological data with Python</strong> <div class="csl-block">Knut Rand, Ivar Grytten, Milena Pavlovic, Chakravarthi Kanduri, Geir Kjetil Sandve</div> <em>Cold Spring Harbor Laboratory</em> (2022-12-22) <a href="https://doi.org/grp3k6">https://doi.org/grp3k6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.12.21.521373">10.1101/2022.12.21.521373</a></div></div>
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>BioNumPy: Fast and easy analysis of biological data with Python</strong> <div class="csl-block">Knut Rand, Ivar Grytten, Milena Pavlovic, Chakravarthi Kanduri, Geir Kjetil Sandve</div> <em>Cold Spring Harbor Laboratory</em> (2022-12-22) <a href="https://doi.org/grp3k6">https://doi.org/grp3k6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.12.21.521373">10.1101/2022.12.21.521373</a></div></div>
 </div>
 <div id="ref-1LexfAxj" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Array programming with NumPy</strong> <div class="csl-block">Charles R Harris, KJarrod Millman, Stéfan J van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, … Travis E Oliphant</div> <em>Nature</em> (2020-09-16) <a href="https://doi.org/ghbzf2">https://doi.org/ghbzf2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-020-2649-2">10.1038/s41586-020-2649-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32939066">32939066</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7759461">PMC7759461</a></div></div>
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Array programming with NumPy</strong> <div class="csl-block">Charles R Harris, KJarrod Millman, Stéfan J van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, … Travis E Oliphant</div> <em>Nature</em> (2020-09-16) <a href="https://doi.org/ghbzf2">https://doi.org/ghbzf2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-020-2649-2">10.1038/s41586-020-2649-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32939066">32939066</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7759461">PMC7759461</a></div></div>
 </div>
 <div id="ref-Jm5YaFMi" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Cupy: A numpy-compatible library for nvidia gpu calculations</strong> <div class="csl-block">Ryosuke Okuta, Yuya Unno, Daisuke Nishino, Shohei Hido, Crissman Loomis</div> <em>Thirty-first Annual Conference on Neural Information Processing Systems (NeurIPS)</em></div>
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Cupy: A numpy-compatible library for nvidia gpu calculations</strong> <div class="csl-block">Ryosuke Okuta, Yuya Unno, Daisuke Nishino, Shohei Hido, Crissman Loomis</div> <em>Thirty-first Annual Conference on Neural Information Processing Systems (NeurIPS)</em></div>
 </div>
 <div id="ref-189xgFrlN" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Numba</strong> <div class="csl-block">Siu Kwan Lam, Antoine Pitrou, Stanley Seibert</div> <em>Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC</em> (2015-11-15) <a href="https://doi.org/gf3nks">https://doi.org/gf3nks</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2833157.2833162">10.1145/2833157.2833162</a></div></div>
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Numba</strong> <div class="csl-block">Siu Kwan Lam, Antoine Pitrou, Stanley Seibert</div> <em>Proceedings of the Second Workshop on the LLVM Compiler Infrastructure in HPC</em> (2015-11-15) <a href="https://doi.org/gf3nks">https://doi.org/gf3nks</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2833157.2833162">10.1145/2833157.2833162</a></div></div>
 </div>
 </div>
 <!-- default theme -->

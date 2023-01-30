@@ -1,12 +1,13 @@
-benchmarking
+Benchmarking
 Bioinformatics
 BioNumPy
 CUDA
 CuPy
 Dagestad
 EPYC
-fasta
+FASTA
 FASTQ
+GATK
 Geir
 genomic
 genotype
@@ -32,8 +33,10 @@ Knut
 malva
 Numba
 NumPy
+pangenie
 pangenome
-parallelized
+parallelization
+preselected
 reimplemented
 runtime
 runtimes
