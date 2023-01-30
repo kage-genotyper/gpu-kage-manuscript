@@ -1,4 +1,4 @@
-Benchmarking
+benchmarking
 Bioinformatics
 BioNumPy
 CUDA
