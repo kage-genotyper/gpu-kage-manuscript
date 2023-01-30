@@ -10,7 +10,7 @@
   <meta name="author" content="Ivar Grytten" />
   <meta name="dcterms.date" content="2023-01-30" />
   <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Ultra-fast genotyping of SNPs and short indels using GPU-acceleration</title>
+  <title>Ultra-fast genotyping of SNPs and short indels using GPU acceleration</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -49,15 +49,15 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
-  <meta name="citation_title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
-  <meta property="og:title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
-  <meta property="twitter:title" content="Ultra-fast genotyping of SNPs and short indels using GPU-acceleration" />
+  <meta name="dc.title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
+  <meta name="citation_title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
+  <meta property="og:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
+  <meta property="twitter:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
   <meta name="dc.date" content="2023-01-30" />
   <meta name="citation_publication_date" content="2023-01-30" />
   <meta property="article:published_time" content="2023-01-30" />
-  <meta name="dc.modified" content="2023-01-30T14:39:52+00:00" />
-  <meta property="article:modified_time" content="2023-01-30T14:39:52+00:00" />
+  <meta name="dc.modified" content="2023-01-30T15:30:12+00:00" />
+  <meta property="article:modified_time" content="2023-01-30T15:30:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -81,9 +81,9 @@
   <meta name="citation_fulltext_html_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_pdf_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/" />
-  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/" />
+  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,7 +96,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Ultra-fast genotyping of SNPs and short indels using GPU-acceleration</h1>
+<h1 class="title">Ultra-fast genotyping of SNPs and short indels using GPU acceleration</h1>
 </header>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -131,15 +131,15 @@ Ivar Grytten &lt;ivargry@ifi.uio.no&gt;.</p>
 <h2 id="introduction">Introduction</h2>
 <p>The cost of sequencing a full human genome has fallen drastically in recent years, and consumers can now get their whole genome sequenced for a few hundred dollars <span class="citation" data-cites="M3mPvfo4">[<a href="#ref-M3mPvfo4" role="doc-biblioref">1</a>]</span>, a fraction of what was the price only a few years ago. As millions of genomes are likely to be sequenced in the coming years, there is an ever-increasing need for efficient methods for analysing this genomic data. At the core of such analysis is <em>variant detection</em>, determining which genetic variants are present in a sample based on the sequenced reads.</p>
 <p>Recent methods <span class="citation" data-cites="kWWwizJT MpmJz9S5 xTxiitR ohTIiqfV">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>,<a href="#ref-MpmJz9S5" role="doc-biblioref">3</a>,<a href="#ref-xTxiitR" role="doc-biblioref">4</a>,<a href="#ref-ohTIiqfV" role="doc-biblioref">5</a>]</span> have shown that detecting variants in a human sample can be performed efficiently and with high accuracy by <em>genotyping</em> the sample against an existing database of known human variation. Such methods use prior knowledge from e.g. the 1000 Genomes Project <span class="citation" data-cites="11PJIeJyi">[<a href="#ref-11PJIeJyi" role="doc-biblioref">6</a>]</span> about where in the genome individuals frequently have variation, and for each such genetic variant uses the genomic reads from the sample to infer the most likely genotype. While such methods traditionally have been based on aligning reads to a reference genome, which is slow, recent <em>alignment-free methods</em> have shown that drastic speedup can be achieved by instead analysing kmers from the sequenced reads. In a recent publication <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>]</span>, we proposed a highly efficient alignment-free method, KAGE, that uses prior knowledge from a population to achieve high genotyping accuracy while being more efficient than other alignment-free genotypers. Alignment-free genotypers, like KAGE, generally work by using an index (e.g. a hashmap) that enables “mapping” of kmers from input reads to alleles of known genetic variants. The genotyping is then performed by counting how many reads support the various alleles of the variants of interest.</p>
-<p>In contrast to other genotypers, especially alignment-based genotypers like GATK <span class="citation" data-cites="15Mgg4tfC">[<a href="#ref-15Mgg4tfC" role="doc-biblioref">7</a>]</span>, the time-consuming steps of KAGE (like processing and counting kmers) can benefit from the massive parallelization that the Graphical Processing Unit (GPU) offer <span class="citation" data-cites="Kt8SdjWo">[<a href="#ref-1H2xJw7YP" role="doc-biblioref">9</a>]</span>. Here, we show that by applying GPU-acceleration to the compute-heavy parts of KAGE, we end up with a very efficient genotyper, GKAGE. GKAGE uses the GPU to process genomic reads, extract kmers and count how many kmers support alleles of genetic variants. We show that GKAGE gives significant speedup (up to 10X) over the original KAGE genotyper (which was already faster than any other genotyper), while producing the exact same output. GKAGE has been implemented so that it is able to run even on standard consumer GPUs, and is able to genotype a whole human sample in a matter of minutes.</p>
+<p>In contrast to other genotypers, especially alignment-based genotypers like GATK <span class="citation" data-cites="15Mgg4tfC">[<a href="#ref-15Mgg4tfC" role="doc-biblioref">7</a>]</span>, the time-consuming steps of KAGE (like processing and counting kmers) can benefit from the massive parallelization that the Graphical Processing Unit (GPU) offers <span class="citation" data-cites="Kt8SdjWo">[<a href="#ref-1H2xJw7YP" role="doc-biblioref">9</a>]</span>. Here, we show that by applying GPU acceleration to the compute-heavy parts of KAGE, we end up with a very efficient genotyper, GKAGE. GKAGE uses the GPU to process genomic reads, extract kmers and count how many kmers support alleles of genetic variants. We show that GKAGE gives significant speedup (up to 10X) over the original KAGE genotyper (which was already faster than any other genotyper), while producing the exact same output. GKAGE has been implemented so that it is able to run even on standard consumer GPUs, and is able to genotype a whole human sample in a matter of minutes.</p>
 <h2 id="results">Results</h2>
-<p>GKAGE is a GPU-accelerated version of the recently published KAGE genotyper. GKAGE uses CUDA-powered GPUs to efficiently parse and encode kmers from reads, and genotype a set of known SNPs and indels based on the kmer counts. GKAGE produces output that is identical to that of KAGE, with reduced runtime on systems that support the CUDA-interface for GPU acceleration. The software is open source and available at <a href="https://github.com/kage-genotyper/kage" class="uri">https://github.com/kage-genotyper/kage</a>. As part of GKAGE, we have also implemented a static GPU hashmap for counting kmers through a Python interface, available at <a href="https://github.com/kage-genotyper/cucounter" class="uri">https://github.com/kage-genotyper/cucounter</a>.</p>
-<p>We have recently shown that KAGE is an order of magnitude faster than existing genotypers while giving better or comparable accuracy <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>]</span>. We thus only benchmark GKAGE against KAGE to show the effect of GPU-acceleration. We do this by running GKAGE and KAGE on a human whole genome sample (15x coverage) on two different systems:</p>
+<p>GKAGE is a GPU accelerated version of the recently published KAGE genotyper. GKAGE uses CUDA-powered GPUs to efficiently parse and encode kmers from reads, and genotype a set of known SNPs and indels based on the kmer counts. GKAGE produces output that is identical to that of KAGE, with reduced runtime on systems that support the CUDA-interface for GPU acceleration. The software is open source and available at <a href="https://github.com/kage-genotyper/kage" class="uri">https://github.com/kage-genotyper/kage</a>. As part of GKAGE, we have also implemented a static GPU hashmap for counting kmers through a Python interface, available at <a href="https://github.com/kage-genotyper/cucounter" class="uri">https://github.com/kage-genotyper/cucounter</a>.</p>
+<p>We have recently shown that KAGE is an order of magnitude faster than existing genotypers while giving better or comparable accuracy <span class="citation" data-cites="kWWwizJT">[<a href="#ref-kWWwizJT" role="doc-biblioref">2</a>]</span>. We thus only benchmark GKAGE against KAGE to show the effect of GPU acceleration. We do this by running GKAGE and KAGE on a human whole genome sample (15x coverage) on two different systems:</p>
 <ol type="1">
 <li><p>A high-performance server with an AMD EPYC 7742 64-Core CPU and two NVIDIA Tesla V100 GPUs. KAGE was run using 16 threads and GKAGE was run using one GPU.</p></li>
 <li><p>A regular desktop computer with an 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz CPU with 6 cores and a NVIDIA GTX 1660 super GPU. KAGE was run using 6 threads.</p></li>
 </ol>
-<p>Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and ?x faster on the desktop computer.</p>
+<p>Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and more 10x faster on the desktop computer.</p>
 <div id="tbl:table1" class="tablenos">
 <table id="tbl:table1">
 <caption><span>Table 1:</span> Running times of KAGE and GKAGE
@@ -154,27 +154,27 @@ Ivar Grytten &lt;ivargry@ifi.uio.no&gt;.</p>
 <tbody>
 <tr class="odd">
 <td>Desktop computer</td>
-<td>1880 sec</td>
-<td>140 sec</td>
+<td>1993 sec</td>
+<td>178 sec</td>
 </tr>
 <tr class="even">
 <td>High-performance computer</td>
 <td>510 sec</td>
-<td>93 sec</td>
+<td>94 sec</td>
 </tr>
 </tbody>
 </table>
 </div>
 <h2 id="methods">Methods</h2>
 <h3 id="implementation">Implementation</h3>
-<p>Here we describe more in detail how GKAGE has been implemented. While GKAGE is implemented as part of KAGE, and in large parts uses the same code, compute-heavy parts have been reimplemented so that the GPU is utilised. GKAGE implements GPU support for two bottleneck components of KAGE that were suitable for GPU-acceleration:</p>
+<p>Here we describe more in detail how GKAGE has been implemented. While GKAGE is implemented as part of KAGE, and in large parts uses the same code, compute-heavy parts have been reimplemented so that the GPU is utilised. GKAGE implements GPU support for two bottleneck components of KAGE that were suitable for GPU acceleration:</p>
 <p><strong>Reading and encoding kmers</strong> from a FASTA/FASTQ file is achieved in KAGE by using BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">10</a>]</span>, a Python library built on top of NumPy <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">11</a>]</span>. BioNumPy uses NumPy to efficiently read chunks of DNA reads from fasta files, encode the bases to a 2-bit representation, and then encode the valid kmers as 64-bit integer representations in an array. GPU support for this step was achieved by utilising CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">12</a>]</span>, a GPU accelerated alternative to NumPy, as a drop-in replacement for NumPy (with a few modifications).</p>
 <p><strong>Counting kmers</strong>
 As part of GKAGE, we have implemented a static hashmap for counting a predefined set of kmers on the GPU. The implementation supports parallel and high-throughput hashing and counting of large chunks of kmers simultaneously on the GPU. Since KAGE only needs to count kmers that are preselected to represent alleles of known variants, which typically is only a small subset of the kmers present in genomic reads, the hashmap needed for this requires only a few gigabytes of memory. Thus, when genotyping a human sample, a GPU with 4 GB of memory is sufficient.</p>
 <h3 id="benchmarks">Benchmarks</h3>
 <p>Benchmarking was performed on two different computer systems, as described in the Results section, using simulated reads for a whole genome sample with 15x coverage. A Snakemake pipeline for reproducing the benchmarking results can be found at <a href="https://github.com/kage-genotyper/GKAGE-benchmarking" class="uri">https://github.com/kage-genotyper/GKAGE-benchmarking</a>.</p>
 <h2 id="discussion">Discussion</h2>
-<p>We have presented GKAGE, a GPU-accelerated genotyper. Our results show that alignment-free genotyping is an ideal problem for GPU-acceleration. While the existing KAGE genotyper is already fast by today’s standards, GKAGE is considerably faster, and enables rapid genotyping on even consumer computers. We believe these results are relevant as the experimental side of whole-genome sequencing is continuously becoming cheaper and more common.</p>
+<p>We have presented GKAGE, a GPU accelerated genotyper. Our results show that alignment-free genotyping is an ideal problem for GPU acceleration. While the existing KAGE genotyper is already fast by today’s standards, GKAGE is considerably faster, and enables rapid genotyping on even consumer computers. We believe these results are relevant as the experimental side of whole-genome sequencing is continuously becoming cheaper and more common.</p>
 <p>Since the original KAGE genotyper was implemented mainly using the array programming libraries NumPy and BioNumPy in Python, adding GPU-support to the existing code base was possible to do in a clean way by using the CuPy library as well as implementing some custom CUDA kernels with Python wrappers. We thus believe that this work shows that adding GPU-support to existing tools is feasible and can be beneficial in cases where many independent operations are performed on an array of data, which is common for computational biology problems. As GPUs are steadily becoming cheaper and more available, we thus believe there might be a huge potential in improving the performance of existing tools and methods, which in many cases can be done quite easily through the Python ecosystem with packages such as CuPy <span class="citation" data-cites="Jm5YaFMi">[<a href="#ref-Jm5YaFMi" role="doc-biblioref">12</a>]</span>, Numba <span class="citation" data-cites="189xgFrlN">[<a href="#ref-189xgFrlN" role="doc-biblioref">13</a>]</span> and BioNumPy <span class="citation" data-cites="i8VR6l5D">[<a href="#ref-i8VR6l5D" role="doc-biblioref">10</a>]</span>.</p>
 <h2 id="references">References</h2>
 <!-- Explicitly insert bibliography here -->

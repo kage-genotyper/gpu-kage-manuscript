@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/kage-genotyper/gpu-kage-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://kage-genotyper.github.io/gpu-kage-manuscript/>.
-The permalink for this webpage version is <https://kage-genotyper.github.io/gpu-kage-manuscript/v/f457d8e2247b65d81e64799c80dd7976db45758e/>.
+The permalink for this webpage version is <https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://kage-genotyper.github.io/gpu-kage-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`f457d8e2247b65d81e64799c80dd7976db45758e`](https://github.com/kage-genotyper/gpu-kage-manuscript/commit/f457d8e2247b65d81e64799c80dd7976db45758e).
+[`ee34779776fae242607012c05ac8202617ae2ca9`](https://github.com/kage-genotyper/gpu-kage-manuscript/commit/ee34779776fae242607012c05ac8202617ae2ca9).
