@@ -11,10 +11,6 @@ authors:
     initials: JWH
     affiliations:
       - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
-  - name: Ivar Grytten
-    initials: IG
-    affiliations:
-      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
   - name: Knut Dagestad Rand
     initials: KD
     affiliations:
@@ -26,5 +22,9 @@ authors:
       - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
       - Centre for Bioinformatics, University of Oslo, Oslo, Norway
       - UiORealArt Convergence Environment, University of Oslo, Oslo, Norway
-    email: geirksa@ifi.uio.no
+  - name: Ivar Grytten
+    initials: IG
+    affiliations:
+      - Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway
     corresponding: true
+    email: ivargry@ifi.uio.no
