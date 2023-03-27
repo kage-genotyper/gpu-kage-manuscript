@@ -7,7 +7,7 @@ CuPy
 CuPy’s
 Dagestad
 EPYC
-fasta
+FASTA
 FASTQ
 GATK
 Geir
