@@ -1,5 +1,62 @@
 [
 {
+  "id": "pybind11",
+  "type": "webpage",
+  "URL": "https://github.com/pybind/pybind11",
+  "title": "pybind11 -- Seamless operability between C++11 and Python",
+  "container-title": "GitHub",
+  "issued": {
+    "date-parts": [
+      [
+        2023
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Wenzel",
+      "family": "Jakob"
+    }
+  ]
+},
+{
+  "id": "cuda",
+  "type": "webpage",
+  "URL": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/#",
+  "title": "CUDA C++ Programming Guide",
+  "issued": {
+    "date-parts": [
+      [
+        2023
+      ]
+    ]
+  },
+  "author": [
+    {
+      "family": "NVIDIA Corporation & Affiliates"
+    }
+  ]
+},
+{
+  "id": "murmur",
+  "type": "webpage",
+  "URL": "https://github.com/aappleby/smhasher/blob/master/src/MurmurHash3.cpp",
+  "title": "MurmurHash3",
+  "issued": {
+    "date-parts": [
+      [
+        2023
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Austin",
+      "family": "Appleby"
+    }
+  ]
+},
+{
   "id": "url:https://github.com/manubot/rootstock",
   "type": "webpage",
   "URL": "https://github.com/manubot/rootstock",
@@ -22,7 +79,7 @@
   {
     "id": "cupy",
     "type": "article-journal",
-    "title": "Cupy: A numpy-compatible library for nvidia gpu calculations",
+    "title": "CuPy: NumPy/SciPy-compatible Array Library for GPU-accelerated Computing with Python",
     "publisher": "Thirty-first Annual Conference on Neural Information Processing Systems (NeurIPS)",
     "author": [
       {
