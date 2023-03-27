@@ -11,4 +11,7 @@ gerbil	doi:10.1186/s13015-017-0097-9	doi:10.1186/s13015-017-0097-9	Kt8SdjWo
 bionumpy	doi:10.1101/2022.12.21.521373	doi:10.1101/2022.12.21.521373	i8VR6l5D
 numpy	doi:10.1038/s41586-020-2649-2	doi:10.1038/s41586-020-2649-2	1LexfAxj
 cupy	cupy	cupy	Jm5YaFMi
+cuda	cuda	cuda	TMtE4Frt
+murmur	murmur	murmur	10CanVCI6
+pybind11	pybind11	pybind11	EjN58bZu
 numba	doi:10.1145/2833157.2833162	doi:10.1145/2833157.2833162	189xgFrlN

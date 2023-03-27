@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-01-30'
+date-meta: '2023-03-27'
 author-meta:
 - Jørgen Wictor Henriksen
 - Knut Dagestad Rand
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
   <meta property="og:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
   <meta property="twitter:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
-  <meta name="dc.date" content="2023-01-30" />
-  <meta name="citation_publication_date" content="2023-01-30" />
-  <meta property="article:published_time" content="2023-01-30" />
-  <meta name="dc.modified" content="2023-01-30T15:30:12+00:00" />
-  <meta property="article:modified_time" content="2023-01-30T15:30:12+00:00" />
+  <meta name="dc.date" content="2023-03-27" />
+  <meta name="citation_publication_date" content="2023-03-27" />
+  <meta property="article:published_time" content="2023-03-27" />
+  <meta name="dc.modified" content="2023-03-27T13:29:29+00:00" />
+  <meta property="article:modified_time" content="2023-03-27T13:29:29+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_pdf_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/" />
-  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/ee34779776fae242607012c05ac8202617ae2ca9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/38f8832ba18247b488a7cf13e89141780fc20522/" />
+  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/38f8832ba18247b488a7cf13e89141780fc20522/" />
+  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/38f8832ba18247b488a7cf13e89141780fc20522/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -151,10 +151,34 @@ Table: Running times of KAGE and GKAGE
 ### Implementation
 Here we describe more in detail how GKAGE has been implemented. While GKAGE is implemented as part of KAGE, and in large parts uses the same code, compute-heavy parts have been reimplemented so that the GPU is utilised. GKAGE implements GPU support for two bottleneck components of KAGE that were suitable for GPU acceleration:
 
-**Reading and encoding kmers** from a FASTA/FASTQ file is achieved in KAGE by using BioNumPy [@bionumpy], a Python library built on top of NumPy [@numpy]. BioNumPy uses NumPy to efficiently read chunks of DNA reads from fasta files, encode the bases to a 2-bit representation, and then encode the valid kmers as 64-bit integer representations in an array. GPU support for this step was achieved by utilising CuPy [@cupy], a GPU accelerated alternative to NumPy, as a drop-in replacement for NumPy (with a few modifications).
+**Reading and encoding kmers** from a FASTA/FASTQ file is achieved in KAGE by using BioNumPy [@bionumpy], a Python library built on top of NumPy [@numpy]. BioNumPy uses NumPy to efficiently read chunks of DNA reads from fasta files, encode the bases to a 2-bit representation, and then encode the valid kmers as 64-bit integer representations in an array. GPU support for this step was achieved by utilizing CuPy [@cupy], a GPU accelerated computing library with an interface that closely follows that of NumPy. This was implemented by replacing the NumPy module in BioNumPy's modules with CuPy, effectively replacing all NumPy function calls with calls to CuPy's functions providing the same functionality, although GPU accelerated. This strategy worked out of the box for most parts of the BioNumPy solution, with only a few modifications having to be made due to certain functions in NumPy's interface not being supported by CuPy. 
 
-**Counting kmers**
-As part of GKAGE, we have implemented a static hashmap for counting a predefined set of kmers on the GPU. The implementation supports parallel and high-throughput hashing and counting of large chunks of kmers simultaneously on the GPU. Since KAGE only needs to count kmers that are preselected to represent alleles of known variants, which typically is only a small subset of the kmers present in genomic reads, the hashmap needed for this requires only a few gigabytes of memory. Thus, when genotyping a human sample, a GPU with 4 GB of memory is sufficient. 
+
+**Counting kmers** As part of GKAGE, we have implemented a static hashtable for counting a predefined set of kmers on the GPU. The implementation supports parallel and high-throughput hashing and counting of large chunks of kmers simultaneously on the GPU.
+This static hashtable is implemented as a C++ class in CUDA [@cuda], with two arrays of 64-bit and 32-bit unsigned integers to represent kmers (keys) and counts (values) respectively. CUDA kernels are implemented that handle insertion (only once during initialization of the hashtable), counting and querying of kmers. The hashtable uses open addressing and a simple linear probing scheme with a murmur hash [@murmur] for the keys.
+
+To find a kmer *k*'s position in the hashtable, the initial probe position *$p_0$* is found by computing
+
+$$
+  p_0=hash(k) \bmod c
+$$
+
+
+where *hash* is a murmur hash function and *c* is the capacity of the hashtable.
+If \textit{$p_0$} is occupied by a different kmer than \textit{k}, the next probing position \textit{$p_i$} can be computed given the previous probing position \textit{$p_{i-1}$} with
+
+$$
+  p_i=(p_{i-1} + 1) \bmod c
+$$
+
+The probing will continue until either *k* or an empty slot in the hashtable is observed.
+
+The hashtable supports three main operations: insertion, counting and querying.
+In each of the cases, the input is an array of 2-bit encoded kmers, and for querying the return value is an array of counts associated with the input kmers. For insertion, counting or querying of *n* kmers, *n* CUDA threads are launched. Each thread is then responsible for fulfilling the relevant operation associated with the kmer, i.e. incrementing or fetching the count associated with the kmer in the hashtable, all achieved using the probing scheme previously described. Furthermore, for insertions and count updates, CUDA atomic operations are used to avoid race conditions. To use the hashtable class in Python, C++ bindings are implemented using pybind11 [@pybind11]. 
+
+Since KAGE only needs to count kmers that are preselected to represent alleles of known variants, which typically is only a small subset of the kmers present in genomic reads, the hashmap needed for this requires only a few gigabytes of memory.
+Thus, when genotyping a human sample, a GPU with 4GB of memory is sufficient (see details below).
+
 
 ### Benchmarks
 Benchmarking was performed on two different computer systems, as described in the Results section, using simulated reads for a whole genome sample with 15x coverage. A Snakemake pipeline for reproducing the benchmarking results can be found at <https://github.com/kage-genotyper/GKAGE-benchmarking>.

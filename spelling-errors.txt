@@ -1,8 +1,10 @@
 benchmarking
 Bioinformatics
 BioNumPy
+BioNumPy’s
 CUDA
 CuPy
+CuPy’s
 Dagestad
 EPYC
 FASTA
@@ -20,6 +22,7 @@ graphtyper
 Grytten
 GTX
 hashmap
+hashtable
 Henriksen
 indels
 Ivar
@@ -33,10 +36,12 @@ Knut
 malva
 Numba
 NumPy
+NumPy’s
 pangenie
 pangenome
 parallelization
 preselected
+pybind
 reimplemented
 runtime
 runtimes
