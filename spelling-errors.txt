@@ -1,7 +1,6 @@
 benchmarking
 Bioinformatics
 BioNumPy
-BioNumPy’s
 CUDA
 CuPy
 CuPy’s
