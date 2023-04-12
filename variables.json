@@ -7,14 +7,14 @@
       "manubot"
     ],
     "lang": "en-US",
-    "date-meta": "2023-03-28",
+    "date-meta": "2023-04-12",
     "author-meta": [
       "Jørgen Wictor Henriksen",
       "Knut Dagestad Rand",
       "Geir Kjetil Sandve",
       "Ivar Grytten"
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta name=\"citation_title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta property=\"og:title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta property=\"twitter:title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta name=\"dc.date\" content=\"2023-03-28\" />\n<meta name=\"citation_publication_date\" content=\"2023-03-28\" />\n<meta property=\"article:published_time\" content=\"2023-03-28\" />\n<meta name=\"dc.modified\" content=\"2023-03-28T11:04:41+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-03-28T11:04:41+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jørgen Wictor Henriksen\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Knut Dagestad Rand\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Bioinformatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Geir Kjetil Sandve\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Bioinformatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"UiORealArt Convergence Environment, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Ivar Grytten\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<link rel=\"canonical\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta property=\"og:url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta name=\"citation_title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta property=\"og:title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta property=\"twitter:title\" content=\"Ultra-fast genotyping of SNPs and short indels using GPU acceleration\" />\n<meta name=\"dc.date\" content=\"2023-04-12\" />\n<meta name=\"citation_publication_date\" content=\"2023-04-12\" />\n<meta property=\"article:published_time\" content=\"2023-04-12\" />\n<meta name=\"dc.modified\" content=\"2023-04-12T15:25:03+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-04-12T15:25:03+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Jørgen Wictor Henriksen\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Knut Dagestad Rand\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Bioinformatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Geir Kjetil Sandve\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"Centre for Bioinformatics, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author_institution\" content=\"UiORealArt Convergence Environment, University of Oslo, Oslo, Norway\" />\n<meta name=\"citation_author\" content=\"Ivar Grytten\" />\n<meta name=\"citation_author_institution\" content=\"Biomedical Informatics research group, Department of Informatics, University of Oslo, Oslo, Norway\" />\n<link rel=\"canonical\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta property=\"og:url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.json"
     ],
@@ -24,10 +24,10 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "2023-03-28",
-    "date_long": "March 28, 2023",
-    "generated": "2023-03-28T11:04:41+00:00",
-    "generated_date_long": "March 28, 2023",
+    "date": "2023-04-12",
+    "date_long": "April 12, 2023",
+    "generated": "2023-04-12T15:25:03+00:00",
+    "generated_date_long": "April 12, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -98,19 +98,19 @@
       "repo_slug": "kage-genotyper/gpu-kage-manuscript",
       "repo_owner": "kage-genotyper",
       "repo_name": "gpu-kage-manuscript",
-      "commit": "274c98671247c9ca5866d7a10cb469bfca53e8e2",
-      "triggering_commit": "274c98671247c9ca5866d7a10cb469bfca53e8e2",
-      "build_url": "https://github.com/kage-genotyper/gpu-kage-manuscript/commit/274c98671247c9ca5866d7a10cb469bfca53e8e2/checks",
-      "job_url": "https://github.com/kage-genotyper/gpu-kage-manuscript/actions/runs/4542288481"
+      "commit": "c4f361f2acde2ac627abf3bb221993647fb0d5d4",
+      "triggering_commit": "c4f361f2acde2ac627abf3bb221993647fb0d5d4",
+      "build_url": "https://github.com/kage-genotyper/gpu-kage-manuscript/commit/c4f361f2acde2ac627abf3bb221993647fb0d5d4/checks",
+      "job_url": "https://github.com/kage-genotyper/gpu-kage-manuscript/actions/runs/4680029524"
     },
     "html_url": "https://kage-genotyper.github.io/gpu-kage-manuscript/",
     "pdf_url": "https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf",
-    "html_url_versioned": "https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/",
-    "pdf_url_versioned": "https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/manuscript.pdf",
+    "html_url_versioned": "https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/",
+    "pdf_url_versioned": "https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/manuscript.pdf",
     "manubot_version": "0.5.5",
     "rootstock_commit": "b7a5c3f80d23ecb53de321822e2a2239209e01c7",
     "manuscript_stats": {
-      "word_count": 2433
+      "word_count": 2531
     }
   }
 }

@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2023-03-28'
+date-meta: '2023-04-12'
 author-meta:
 - Jørgen Wictor Henriksen
 - Knut Dagestad Rand
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
   <meta property="og:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
   <meta property="twitter:title" content="Ultra-fast genotyping of SNPs and short indels using GPU acceleration" />
-  <meta name="dc.date" content="2023-03-28" />
-  <meta name="citation_publication_date" content="2023-03-28" />
-  <meta property="article:published_time" content="2023-03-28" />
-  <meta name="dc.modified" content="2023-03-28T11:04:41+00:00" />
-  <meta property="article:modified_time" content="2023-03-28T11:04:41+00:00" />
+  <meta name="dc.date" content="2023-04-12" />
+  <meta name="citation_publication_date" content="2023-04-12" />
+  <meta property="article:published_time" content="2023-04-12" />
+  <meta name="dc.modified" content="2023-04-12T15:25:03+00:00" />
+  <meta property="article:modified_time" content="2023-04-12T15:25:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -50,9 +50,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/" />
   <meta name="citation_pdf_url" content="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://kage-genotyper.github.io/gpu-kage-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/" />
-  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/274c98671247c9ca5866d7a10cb469bfca53e8e2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/" />
+  <meta name="manubot_html_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://kage-genotyper.github.io/gpu-kage-manuscript/v/c4f361f2acde2ac627abf3bb221993647fb0d5d4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -134,16 +134,15 @@ We have recently shown that KAGE is an order of magnitude faster than existing g
 
 2. A regular desktop computer with an 11th Gen Intel(R) Core(TM) i5-11400F @ 2.60GHz CPU with 6 cores and a NVIDIA GTX 1660 super GPU. KAGE was run using 6 threads.
 
-Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and more than 10x faster on the desktop computer.
+Table 1 shows the runtimes on these two systems. GKAGE is approximately 5x faster on the high-end system and more than 10x faster on the desktop computer. Since GKAGE only needs the kmer counts of a predefined set of kmers (those associated with variants), and no existing GPU-based kmer counter is able to count only a given set of kmers, we have implemented our own kmer counter as part of GKAGE. An alternative solution would be to count all kmers using an existing tool and filter out those kmers that are relevant. Table 1 also shows the time spent by the GPU kmer counter Gerbil [@gerbil] to only count kmers.
 
 
-|                           | KAGE     | GKAGE   |
-|---------------------------|----------|---------|
-| Desktop computer          | 1993 sec | 178 sec |
-| High-performance computer | 510 sec  | 94 sec |
-Table: Running times of KAGE and GKAGE
+|                           | KAGE     | GKAGE   | Gerbil (only kmer counting) |
+|---------------------------|----------|---------|-----------------------------|
+| Desktop computer          | 1993 sec | 178 sec | 464 sec                     |
+| High-performance computer | 510 sec  | 94 sec  | 438 sec                     |
+Table: Running times of KAGE, GKAGE and Gerbil (only kmer counting)
 {#tbl:table1}
-
 
 
 
@@ -166,7 +165,7 @@ $$
 
 
 where $hash$ is a murmur hash function and $c$ is the capacity of the hashtable.
-If \$p_0$ is occupied by a different kmer than $k$, the next probing position $p_i$ can be computed given the previous probing position $p_{i-1}$ with
+If $p_0$ is occupied by a different kmer than $k$, the next probing position $p_i$ can be computed given the previous probing position $p_{i-1}$ with
 
 $$
   p_i=(p_{i-1} + 1) \bmod c
@@ -211,6 +210,7 @@ Since the original KAGE genotyper was implemented mainly using the array program
 [@crow]: doi:10.1016/j.cell.2019.02.041
 [@gatk]: doi:10.1101/201178
 [@snakemake]: doi:10.12688/f1000research.29032.2
+
 
 
 ## References
