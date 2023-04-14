@@ -1,4 +1,4 @@
-Benchmarking
+benchmarking
 Bioinformatics
 BioNumPy
 CUDA
@@ -6,7 +6,7 @@ CuPy
 CuPy’s
 Dagestad
 EPYC
-FASTA
+fasta
 FASTQ
 GATK
 Geir
